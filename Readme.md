@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Александр](https://up.htmlacademy.ru/htmlcss-individual/1/user/2100349).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
 
 ---
 
