@@ -28,12 +28,15 @@
         </a>
       </div>
       <div class="header-catalog">
-        <p class="menu-item-text">Каталог товаров</p>
+        <a class="header-catalog-link" href="#">Каталог товаров</a>
       </div>
       <ul class="header-menu">
-        <li class="menu-item-text">Доставка</li>
-        <li class="menu-item-text">Гарантия</li>
-        <li class="menu-item-text">Контакты</li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Доставка</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Гарантия</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Контакты</a>
       </ul>
     </header>
 
@@ -41,12 +44,14 @@
     <main class="slider">
       <div class="main-info">
         <h1 class="visually-hidden">Блок слайдер с кнопками прокрутки</h1>
+        <button class="left"></button>
+
+        <button class="right"></button>
         <h2>Порхает как бабочка, жалит как пчела!</h2>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-        <button class="main-button">
-          <p class="menu-item-text">ПОДРОБНЕЕ</p>
-          <img class="font-main-btn" src="#" alt="желтая полоса за текстом кнопки">
-        </button>
+
+        <a class="more-detailed-link">Подробнее</a>
+
         <ul class="parameters">
           <li>800 м</li>
           <li>Дальность полета</li>
@@ -54,17 +59,31 @@
           <li>Радиус поражения</li>
         </ul>
       </div>
+      <h2 class="visually-hidden">Круглые кнопки индикаторы</h2>
+      <button class="buttons-indicators"></button>
     </main>
 
     <!--Выбор категории товаров-->
     <section>
       <ul class="category">
-        <li class="category-item">Виртуальная реальность</li>
-        <li class="category-item">Моноподы для селфи</li>
-        <li class="category-item">Экшн-камера</li>
-        <li class="category-item">Фитнес-браслеты</li>
-        <li class="category-item">Умные часы</li>
-        <li class="category-item">Квадрокоптеры</li>
+        <li class="category-item">
+          <a class="category-link" href="#">Виртуальная реальность</a>
+        </li>
+        <li class="category-item">
+          <a class="category-link" href="#">Моноподы для селфи</a>
+        </li>
+        <li class="category-item">
+          <a class="category-link" href="#">Экшн-камера</a>
+        </li>
+        <li class="category-item">
+          <a class="category-link" href="#">Фитнес-браслеты</a>
+        </li>
+        <li class="category-item">
+          <a class="category-link" href="#">Умные часы</a>
+        </li>
+        <li class="category-item">
+          <a class="category-link" href="#">Квадрокоптеры</a>
+        </li>
       </ul>
     </section>
 
