@@ -52,12 +52,16 @@
 
         <a class="more-detailed-link">Подробнее</a>
 
-        <ul class="parameters">
-          <li>800 м</li>
-          <li>Дальность полета</li>
-          <li>50 м</li>
-          <li>Радиус поражения</li>
-        </ul>
+        <div class="parameters">
+          <dl class="range">
+            <dt class="numeric-parameter">800 м</dt>
+            <dd class="option-name">Дальность полета</dd>
+          </dl>
+          <dl class="radius">
+            <dt class="numeric-parameter">50 м</dt>
+            <dd class="option-name">Радиус поражения</dd>
+          </dl>
+        </div>
       </div>
       <h2 class="visually-hidden">Круглые кнопки индикаторы</h2>
       <button class="buttons-indicators"></button>
@@ -90,9 +94,15 @@
     <!--Доставка-->
     <section class="delivery">
       <ul class="menu-delivery">
-        <li>Доставка</li>
-        <li>Гарантия</li>
-        <li>Кредит</li>
+        <li>
+          <button class="button-delivery">Доставка</button>
+        </li>
+        <li>
+          <button class="button-warranty">Гарантия</button>
+        </li>
+        <li>
+          <button class="button-credit">Кредит</button>
+        </li>
       </ul>
       <h2>Доставка</h2>
       <p>Мы с удовольствием доставим ваш товар прямо
@@ -101,13 +111,13 @@
     </section>
     <section class="order">
 
-      <p>Доставим редкий товар под заказ</p>
+      <a class="order-link" href="#">Доставим редкий товар под заказ</a>
 
     </section>
 
     <!--Контакты-->
     <section class="info">
-      <div class="About us">
+      <div class="about-us">
         <h2>О нас</h2>
         <p>Огромный выбор гаджетов не оставит равнодушным
           гика, который есть в каждом из нас.
@@ -120,30 +130,33 @@
           <li>Сдик</li>
           <li>ТоксБерри</li>
         </ul>
-        <button>Подробнее о нас</button>
+        <a class="more-about-us" href="#">Подробнее о нас</a>
       </div>
-      <div class="Contacts">
-        <h2>Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис.
+      <div class="contacts">
+        <h2 class="contacts-title">Контакты</h2>
+        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
           Заодно сможете проверить работоспособность покупки.
         </p>
-        <h3>Интернет-магазин «Девайс»</h3>
-        <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <p>+7 (812) 812-12-12</p>
-        <h3>Время работы</h3>
-        <p>пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
-        <button>Напишите нам</button>
+        <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
+        <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+        <a class="contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 5812-12-12</a>
+        <h3 class="contacts-subtitle">Время работы</h3>
+        <ul class="contacts-schedule">
+          <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
+          <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+        </ul>
+        <a class="write-to-us">Напишите нам</a>
       </div>
     </section>
 
     <!--Подписка-->
     <section class="subscription">
-      <h2>Подпишитесь на рассылку</h2>
-      <p>Еженедельный дайджест с обзорами новинок,
+      <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+      <p class="subscription-text">Еженедельный дайджест с обзорами новинок,
         длительными тест-драйвами, распаковками, а также акции,
         спецпредложения и вот это вот всё.</p>
       <div class="mail">Ваш e-mail</div>
-      <button>ПОДПИСАТЬСЯ</button>
+      <button>Подписаться</button>
       <div class="free">
 
         <p>Это бесплатно</p>
