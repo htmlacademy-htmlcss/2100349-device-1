@@ -6,52 +6,57 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <header>
+    <header class="main-header">
+      <a href="#" class="logo-site"><!--Логотип Device--></a>
+      <div>
+        <form class="search-form">
+          <input class="search-string" type="text" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">
+            <span class="search-button-text">Найти</span>
+          </button>
+        </form>
 
-      <div class="user-menu">
-        <div class="search-bar">
-          <p class="text-bar">Текст поиска</p>
-        </div>
-        <div class="search-button">
-          <p class="button-text">Найти</p>
-        </div>
-        <div class="account">
-
+        <a href="#" class="account-name">
           <p>Коля Петухов</p>
-          <button class="exit">Выйти</button>
-        </div>
-        <div class="compare">
-
+        </a>
+        <a href="#" class="account-exit">
+          <p>Выйти</p>
+        </a>
+        <a href="#" class="compare">
           <p class="text-compare">Сравнить</p>
-        </div>
-        <div class="basket">
-
-
+        </a>
+        <a href="#" class="basket">
           <p class="number">2</p>
           <p class="text-quantity">Корзина</p>
-        </div>
+        </a>
       </div>
       <div class="header-catalog">
-        <p class="menu-item-text">Каталог товаров</p>
-
+        <a class="header-catalog-link" href="#">Каталог товаров</a>
       </div>
       <ul class="header-menu">
-        <li class="menu-item-text">Доставка</li>
-        <li class="menu-item-text">Гарантия</li>
-        <li class="menu-item-text">Контакты</li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Доставка</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Гарантия</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Контакты</a>
       </ul>
     </header>
 
     <!--Заголовок категории товаров-->
     <section>
-      <h1>Моноподы для селфи</h1>
-      <div class="breadcrumbs">
-        <p>Главная</p>
-
-        <p>Каталог товаров</p>
-
-        <p>Моноподы для селфи</p>
-      </div>
+      <h1 class="category-title">Моноподы для селфи</h1>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Гарантия</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Каталог</a>
+        </li>
+      </ul>
     </section>
 
     <!--Меню Фильтр-->
