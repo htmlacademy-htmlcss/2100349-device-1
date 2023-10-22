@@ -91,15 +91,18 @@
             <input type="radio" name="question" value="no">Нет
           </label>
         </form>
+        <button class="show-button" type="submit">
+          <span class="show-button-text">Показать</span>
+        </button>
       </div>
 
       <!--Меню Сортировка-->
       <div>
-        <p>СОРТИРОВКА:</p>
-        <p>Популярные</p>
-        <img class="down-arrow" src="#" alt="Стрелка вниз">
-        <img class="down-arrow" src="#" alt="Треугольная стрелка вниз">
-        <img class="down-arrow" src="#" alt="Треугольная стрелка вверх">
+        <p class="sorting">Сортировка:</p>
+        
+        <select name="select-popular">
+          <option value="popular">Популярные</option>
+        </select>
       </div>
 
       <!--Карточки товаров-->
