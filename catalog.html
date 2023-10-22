@@ -45,7 +45,7 @@
 
     <!--Заголовок категории товаров-->
     <section>
-      <h1 class="category-title">Моноподы для селфи</h1>
+      <h2 class="category-title">Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -62,25 +62,26 @@
     <!--Меню Фильтр-->
     <main>
       <div class="filter">
-        <p>ФИЛЬТР:</p>
-        <img class="black-line" src="#" alt="Разделитель в виде черной линии">
-        <p>Стоимость</p>
+        <p>Фильтр:</p>
+
         <div class="cost-scale">
-
-          <img class="black-line" src="#" alt="заполненная шкала стоимости">
-
-          <img class="black-line" src="#" alt="полная шкала стоимости">
+          <p>Стоимость</p>
         </div>
-        <img class="black-line" src="#" alt="Разделитель в виде черной линии">
+
         <p>Цвет</p>
-        <ul>
-          <li>Черный</li>
-          <li>Белый</li>
-          <li>Синий</li>
-          <li>Красный</li>
-          <li>Розовый</li>
-        </ul>
-        <img class="black-line" src="#" alt="Разделитель в виде черной линии">
+        <form action="#" method="post">
+          <input type="checkbox" name="black" id="black-field" checked>
+          <label for="black-field">Черный</label><br>
+          <input type="checkbox" name="white" id="white-field" checked>
+          <label for="white-field">Белый</label><br>
+          <input type="checkbox" name="sblue" id="blue-field">
+          <label for="blue-field">Синий</label><br>
+          <input type="checkbox" name="red" id="red-field">
+          <label for="red-field">Красный</label><br>
+          <input type="checkbox" name="pink" id="pink-field">
+          <label for="pink-field">Розовый</label><br>
+        </form>
+
         <p>Bluetooth</p>
         <ul>
           <li>Есть</li>
