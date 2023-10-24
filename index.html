@@ -11,17 +11,12 @@
       <div>
         <form class="search-form">
           <input class="search-string" type="text" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit">
-            <span class="search-button-text">Найти</span>
-          </button>
+          <button class="search-button" type="submit">Найти</button>
         </form>
 
-        <a href="#" class="account">
-          <p>Войти</p>
-        </a>
-        <a href="#" class="compare">
-          <p class="text-compare">Сравнить</p>
-        </a>
+        <a href="#" class="account">Войти</a>
+        <a href="#" class="compare">Сравнить</a>
+
         <a href="#" class="basket">
           <p class="number">2</p>
           <p class="text-quantity">Корзина</p>
@@ -44,9 +39,9 @@
     <main class="slider">
       <div class="main-info">
         <h1 class="visually-hidden">Блок слайдер с кнопками прокрутки</h1>
-        <button class="left"></button>
+        <button class="left" type="button"></button>
 
-        <button class="right"></button>
+        <button class="right" type="button"></button>
         <h2>Порхает как бабочка, жалит как пчела!</h2>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
@@ -63,8 +58,10 @@
           </dl>
         </div>
       </div>
-      <h2 class="visually-hidden">Круглые кнопки индикаторы</h2>
-      <button class="buttons-indicators"></button>
+      <p class="visually-hidden">Круглые кнопки индикаторы</p>
+      <button class="buttons-indicators" type="button"></button>
+      <button class="buttons-indicators" type="button"></button>
+      <button class="buttons-indicators" type="button"></button>
     </main>
 
     <!--Выбор категории товаров-->
@@ -98,13 +95,13 @@
     <section class="delivery">
       <ul class="menu-delivery">
         <li>
-          <button class="button-delivery">Доставка</button>
+          <button class="button-delivery" type="button">Доставка</button>
         </li>
         <li>
-          <button class="button-warranty">Гарантия</button>
+          <button class="button-warranty" type="button">Гарантия</button>
         </li>
         <li>
-          <button class="button-credit">Кредит</button>
+          <button class="button-credit" type="button">Кредит</button>
         </li>
       </ul>
       <h2>Доставка</h2>
@@ -128,9 +125,9 @@
            уголки России транспортными компаниями:
         </p>
         <ul class="delivery-services">
-          <li>Меловые линии</li>
-          <li>Сдик</li>
-          <li>ТоксБерри</li>
+          <li class="delivery-item">Меловые линии</li>
+          <li class="delivery-item">Сдик</li>
+          <li class="delivery-item">ТоксБерри</li>
         </ul>
         <a class="more-about-us" href="#">Подробнее о нас</a>
       </div>
@@ -157,11 +154,9 @@
       <p class="subscription-text">Еженедельный дайджест с обзорами новинок,
         длительными тест-драйвами, распаковками, а также акции,
         спецпредложения и вот это вот всё.</p>
-        <form class="subscription-form">
-          <input class="subscription-string" type="text" placeholder="Ваш e-mail">
-          <button class="subscription-button" type="submit">
-            <span class="subscription-button-text">подписаться</span>
-          </button>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru">
+          <input class="subscription-string" type="e-mail" placeholder="Ваш e-mail">
+          <button class="subscription-button" type="submit">подписаться</button>
         </form>
       <div class="free">
         <p>Это бесплатно</p>
