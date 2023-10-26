@@ -8,26 +8,20 @@
   <body>
     <!--Шапка сайта-->
     <header class="main-header">
-      <a href="#" class="logo-site"><!--Логотип Device--></a>
+      <a href="index.html" class="logo-site"><!--Логотип Device--></a>
       <div>
-        <form class="search-form">
+        <form class="search-form" action="https://echo.htmlacademy.ru">
           <input class="search-string" type="text" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit">
-            <span class="search-button-text">Найти</span>
-          </button>
+          <button class="search-button" type="submit">Найти</button>
         </form>
 
-        <a href="#" class="account-name">
-          <p>Коля Петухов</p>
-        </a>
-        <a href="#" class="account-exit">
-          <p>Выйти</p>
-        </a>
-        <a href="#" class="compare">
-          <p class="text-compare">Сравнить</p>
-        </a>
+        <a href="#" class="account-name">Коля Петухов</a>
+        <a href="#" class="account-exit">Выйти</a>
+
+        <a href="#" class="compare">Сравнить</a>
+
         <a href="#" class="basket">
-          <p class="number">2</p>
+          <span class="number">2</span>
           <p class="text-quantity">Корзина</p>
         </a>
       </div>
@@ -64,7 +58,7 @@
     <!--Меню Фильтр-->
     <main>
       <div class="filter">
-        <p>Фильтр:</p>
+        <h2>Фильтр:</h2>
 
         <div class="cost-scale">
           <p>Стоимость</p>
@@ -82,10 +76,7 @@
           <label for="red-field">Красный</label><br>
           <input type="checkbox" name="pink" id="pink-field">
           <label for="pink-field">Розовый</label><br>
-        </form>
-
-        <p>Bluetooth</p>
-        <form action="#" method="post">
+          <p>Bluetooth</p>
           <label>
             <input type="radio" name="question" value="there-is">Есть
           </label>
@@ -93,14 +84,13 @@
             <input type="radio" name="question" value="no">Нет
           </label>
         </form>
-        <button class="show-button" type="submit">
-          <span class="show-button-text">Показать</span>
-        </button>
+        <button class="show-button" type="submit">Показать</button>
+
       </div>
 
       <!--Меню Сортировка-->
       <div>
-        <p class="sorting">Сортировка:</p>
+        <h2 class="sorting">Сортировка:</h2>
 
         <select name="select-popular">
           <option value="popular">Популярные</option>
@@ -143,7 +133,7 @@
           </li>
         </ul>
       </div>
-      <button class="download-more">Загрузить еще</button>
+      <button class="download-more" type="button">Загрузить еще</button>
 
       <!--Кнопки Назад/Вперед-->
       <div class="page-numbers">
