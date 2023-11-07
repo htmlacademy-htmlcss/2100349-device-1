@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <base href="https://htmlacademy-htmlcss.github.io/2100349-device-1/3/">
+</head>
+  <body>
+    <!--Шапка сайта-->
+    <header class="main-header">
+      <a href="index.html" class="logo-site">
+        <img class="logo" src="images/logo-site.svg" width="145" height="36" alt="Логотип сайта DEVICE.">
+      </a>
+      <div>
+        <form class="search-form" action="https://echo.htmlacademy.ru">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <g clip-path="url(#clip0_49566_942)">
+              <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" fill="black"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_49566_942">
+                <rect width="16" height="16" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <input class="search-string" type="text" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+
+        <a href="#" class="account">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none">
+            <path d="M1 12H14C13.8 9.4 11.9 7.2 9.3 6.5C10.3 5.9 11 4.8 11 3.5C11 1.6 9.4 0 7.5 0C5.6 0 4 1.6 4 3.5C4 4.8 4.7 5.9 5.7 6.5C3.1 7.2 1.2 9.4 1 12Z" fill="black"/>
+          </svg>
+          <p class="header-text">Коля Петухов</p>
+        </a>
+        <a href="#" class="account-exit">Выйти</a>
+
+        <a href="#" class="compare">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
+            <g clip-path="url(#clip0_49566_956)">
+              <path d="M6 0H4V12H6V0Z" fill="black"/>
+              <path d="M2 4H0V12H2V4Z" fill="black"/>
+              <path d="M10 3H8V12H10V3Z" fill="black"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_49566_956">
+                <rect width="10" height="12" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="header-text">Сравнить</p>
+        </a>
+
+        <a href="#" class="basket">
+          <img class="ellipse-for-number" src="images/Ellipse-for-basket.svg" width="21" height="21" alt="Белый круглый фон для">
+          <span class="number">2</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+            <g clip-path="url(#clip0_49566_962)">
+              <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z" fill="black"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_49566_962">
+                <rect width="16" height="14" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <p class="header-text">Корзина</p>
+        </a>
+      </div>
+      <div class="header-catalog">
+        <a class="header-catalog-link" href="#">
+          <p class="header-catalog-text">Каталог товаров</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+            <circle opacity="0.3" cx="25" cy="25" r="24" stroke="black" stroke-width="2"/>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <g opacity="0.3" clip-path="url(#clip0_49566_504)">
+              <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_49566_504">
+                <rect width="16" height="16" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+      <ul class="header-menu">
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Доставка</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Гарантия</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Контакты</a>
+      </ul>
+    </header>
+
+    <!--Заголовок категории товаров-->
+    <section>
+      <h1 class="visually-hidden">Страница с карточками товаров</h1>
+      <h2 class="category-title">Моноподы для селфи</h2>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="4" height="8" viewBox="0 0 4 8" fill="none">
+            <g opacity="0.2" clip-path="url(#clip0_49566_856)">
+              <path d="M3.79999 3.59995L0.799994 0.599951C0.599994 0.399951 0.299994 0.399951 0.0999939 0.599951C-6.10203e-06 0.799951 -6.10203e-06 1.19995 0.0999939 1.39995L2.69999 3.99995L0.0999939 6.59995C-6.10203e-06 6.79995 -6.10203e-06 7.09995 0.0999939 7.29995C0.199994 7.39995 0.399994 7.49995 0.499994 7.49995C0.599994 7.49995 0.799994 7.39995 0.899994 7.39995L3.89999 4.39995C3.89999 4.29995 3.99999 4.09995 3.99999 3.99995C3.99999 3.89995 3.89999 3.69995 3.79999 3.59995Z" fill="black"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_49566_856">
+                <rect width="4" height="7" fill="white" transform="translate(0 0.5)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Каталог товаров</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="4" height="8" viewBox="0 0 4 8" fill="none">
+            <g opacity="0.2" clip-path="url(#clip0_49566_856)">
+              <path d="M3.79999 3.59995L0.799994 0.599951C0.599994 0.399951 0.299994 0.399951 0.0999939 0.599951C-6.10203e-06 0.799951 -6.10203e-06 1.19995 0.0999939 1.39995L2.69999 3.99995L0.0999939 6.59995C-6.10203e-06 6.79995 -6.10203e-06 7.09995 0.0999939 7.29995C0.199994 7.39995 0.399994 7.49995 0.499994 7.49995C0.599994 7.49995 0.799994 7.39995 0.899994 7.39995L3.89999 4.39995C3.89999 4.29995 3.99999 4.09995 3.99999 3.99995C3.99999 3.89995 3.89999 3.69995 3.79999 3.59995Z" fill="black"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_49566_856">
+                <rect width="4" height="7" fill="white" transform="translate(0 0.5)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">Моноподы для селфи</a>
+        </li>
+      </ul>
+    </section>
+
+    <!--Меню Фильтр-->
+    <main>
+      <div class="filter">
+        <h2 class="filter-text">Фильтр:</h2>
+
+        <div class="cost-scale">
+          <p class="cost-scale-text">Стоимость</p>
+        </div>
+
+        <p class="filter-text">Цвет</p>
+        <form action="#" method="post">
+          <input type="checkbox" name="black" id="black-field" checked>
+          <label for="black-field">Черный</label><br>
+          <input type="checkbox" name="white" id="white-field" checked>
+          <label for="white-field">Белый</label><br>
+          <input type="checkbox" name="sblue" id="blue-field">
+          <label for="blue-field">Синий</label><br>
+          <input type="checkbox" name="red" id="red-field">
+          <label for="red-field">Красный</label><br>
+          <input type="checkbox" name="pink" id="pink-field">
+          <label for="pink-field">Розовый</label><br>
+          <p class="filter-text">Bluetooth</p>
+          <label>
+            <input type="radio" name="question" value="there-is">Есть
+          </label>
+          <label>
+            <input type="radio" name="question" value="no">Нет
+          </label>
+          <button class="show-button" type="submit">Показать</button>
+        </form>
+      </div>
+
+      <!--Меню Сортировка-->
+      <div>
+        <h2 class="sorting">Сортировка:</h2>
+
+        <select name="select-popular">
+          <option value="popular">Популярные</option>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <path d="M14.9934 17.825L18.8408 13.325C19.0864 13.025 19.0864 12.525 18.8408 12.225C18.5952 11.925 18.1859 11.925 17.9404 12.225L14.5023 16.225L11.0642 12.225C10.8186 11.925 10.4093 11.925 10.1637 12.225C10.0819 12.425 10 12.625 10 12.825C10 13.025 10.0819 13.225 10.1637 13.325L14.0111 17.825C14.3385 18.125 14.666 18.125 14.9934 17.825Z" fill="black"/>
+          </svg>
+        </select>
+
+        <a href="#" class="up-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
+            <g opacity="0.2" clip-path="url(#clip0_49566_678)">
+              <path d="M6 0L11.5 10H0.5" fill="black"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_49566_678">
+                <rect width="11" height="10" fill="white" transform="translate(0.5)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <a href="#" class="down-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
+            <g opacity="0.2" clip-path="url(#clip0_49566_681)">
+              <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_49566_681">
+                <rect width="11" height="10" fill="white" transform="translate(11.5 10) rotate(180)"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+
+      <!--Карточки товаров-->
+      <div class="cards">
+        <ul class="cards-item">
+          <li class="card-1">
+            <a href="#" class="card-1-link">
+              <img class="amateur-selfie-stick" src="images/amateur-selfie-stick-rest.jpg" width="360" height="380" alt="Селфи-палка с телефоном">
+              <span class="name-card">Любительская селфи-палка</span>
+              <span class="sale-name-card">500 р</span>
+            </a>
+          </li>
+          <li class="card-2">
+            <a href="#" class="card-2-link">
+              <img class="professional-selfie-stick" src="images/professional-selfie-stick-rest.jpg" width="360" height="380" alt="Собранная селфи-палка">
+              <span class="name-card">Профессиональная селфи-палка</span>
+              <span class="sale-name-card">1500 р</span>
+            </a>
+          </li>
+          <li class="card-3">
+            <a href="#" class="card-3-link">
+              <img class="unsinkable-selfie-stick" src="images/unsinkable-selfie-stick-rest.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <span class="name-card">Непотопляемая селфи-палка</span>
+              <span class="sale-name-card">2500 р</span>
+            </a>
+          </li>
+          <li class="card-4">
+            <a href="#" class="card-4-link">
+              <img class="selfie-stick-hand" src="images/selfie-stick-hand-rest.jpg" width="360" height="380" alt="Рука селфи-палка">
+              <span class="name-card">Селфи-палка "Следую за мной"</span>
+              <span class="sale-name-card">1500 р</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="download-more" type="button">Загрузить еще</button>
+
+      <!--Кнопки Назад/Вперед-->
+      <div class="page-numbers">
+        <ul>
+          <li>
+            <a href="#" class="back">Назад</a>
+          </li>
+          <li>
+            <a href="#" class="back">1</a>
+          </li>
+          <li>
+            <a href="#" class="back">2</a>
+          </li>
+          <li>
+            <a href="#" class="back">3</a>
+          </li>
+          <li><span>...</span></li>
+          <li>
+            <a href="#" class="back">15</a>
+          </li>
+          <li>
+            <a href="#" class="back">Вперёд</a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <!--подвал сайта-->
+    <footer>
+      <div class="device">
+        <a class="logo-site" href="index.html">
+          <img class="footer-logo" src="images/yellow-logo-site.svg" alt="логотип сайта." >
+        </a>
+        <p class="device-text">Санкт-Петербург, Набережная
+          реки Карповки, 5, литера П.</p>
+      </div>
+      <ul class="footer-menu-delivery">
+        <li>
+          <a class="footer-button-delivery" href="#">Доставка</a>
+        </li>
+        <li>
+          <a class="footer-button-warranty" href="#">Гарантия</a>
+        </li>
+        <li>
+          <a class="footer-button-credit" href="#">Кредит</a>
+        </li>
+      </ul>
+      <div class="social-list">
+        <ul class="social-list-links">
+          <li class="social-list-item">
+            <a href="https://telegram.org/">
+              <img class="logo-telegramm" src="images/telegram-logo.svg" width="40" height="40" alt="логотип социальной сети телеграмм.">
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="youtube.com">
+              <img class="logo-youtube" src="images/youtube-logo.svg" width="40" height="40" alt="логотип социальной сети ютуб.">
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="http://x.com/">
+              <img class="logo-x" src="images/twitter-logo.svg" width="40" height="40" alt="логотип социальнойсети твиттер.">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 5812-12-12</a>
+      <a class="academy" href="https://htmlacademy.ru">
+        <img class="logo-academy" src="images/logo-academy.svg" width="115" height="33" alt="логотип сайта htmlacademy.">
+      </a>
+    </footer>
+  </body>
+</html>
