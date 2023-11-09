@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/2100349-device-1/3/">
 </head>
   <body>
@@ -13,74 +14,25 @@
       </a>
       <div>
         <form class="search-form">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <g clip-path="url(#clip0_49566_942)">
-              <path d="M15.7 14.3L12.6 11.2C13.5 10 14 8.6 14 7C14 3.1 10.9 0 7 0C3.1 0 0 3.1 0 7C0 10.9 3.1 14 7 14C8.6 14 10 13.5 11.2 12.6L14.3 15.7C14.5 15.9 14.7 16 15 16C15.6 16 16 15.6 16 15C16 14.8 15.9 14.5 15.7 14.3ZM2 7C2 4.2 4.2 2 7 2C9.8 2 12 4.2 12 7C12 9.8 9.8 12 7 12C4.2 12 2 9.8 2 7Z" fill="black"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_49566_942">
-                <rect width="16" height="16" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
           <input class="search-string" type="text" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
 
         <a href="#" class="account">
-          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" fill="none">
-            <path d="M1 12H14C13.8 9.4 11.9 7.2 9.3 6.5C10.3 5.9 11 4.8 11 3.5C11 1.6 9.4 0 7.5 0C5.6 0 4 1.6 4 3.5C4 4.8 4.7 5.9 5.7 6.5C3.1 7.2 1.2 9.4 1 12Z" fill="black"/>
-          </svg>
           <p class="header-text">Войти</p>
         </a>
         <a href="#" class="compare">
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="12" viewBox="0 0 10 12" fill="none">
-            <g clip-path="url(#clip0_49566_956)">
-              <path d="M6 0H4V12H6V0Z" fill="black"/>
-              <path d="M2 4H0V12H2V4Z" fill="black"/>
-              <path d="M10 3H8V12H10V3Z" fill="black"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_49566_956">
-                <rect width="10" height="12" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
           <p class="header-text">Сравнить</p>
         </a>
 
         <a href="#" class="basket">
-          <img class="ellipse-for-number" src="images/Ellipse-for-basket.svg" width="21" height="21" alt="Белый круглый фон для">
           <span class="number">2</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-            <g clip-path="url(#clip0_49566_962)">
-              <path d="M15.3 5L11.8 5.2L8.6 0.3C8.5 0.1 8.2 0 8 0C7.8 0 7.5 0.1 7.4 0.3L4.2 5.2H0.7C0.3 5.2 0 5.5 0 5.9C0 6 0 6 0 6.1L1.9 12.9C2.1 13.6 2.6 14 3.3 14H12.7C13.4 14 13.9 13.6 14.1 12.9L16 6C16 5.9 16 5.9 16 5.8C16 5.4 15.7 5 15.3 5ZM8 1.9L10.2 5.1H5.9L8 1.9Z" fill="black"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_49566_962">
-                <rect width="16" height="14" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
           <p class="header-text">Корзина</p>
         </a>
       </div>
       <div class="header-catalog">
         <a class="header-catalog-link" href="#">
           <p>Каталог товаров</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
-            <circle opacity="0.3" cx="25" cy="25" r="24" stroke="black" stroke-width="2"/>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <g opacity="0.3" clip-path="url(#clip0_49566_504)">
-              <path d="M16 7H9V0H7V7H0V9H7V16H9V9H16V7Z" fill="black"/>
-            </g>
-            <defs>
-              <clipPath id="clip0_49566_504">
-                <rect width="16" height="16" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
         </a>
       </div>
       <ul class="header-menu">
@@ -91,7 +43,6 @@
         <li class="header-menu-item">
           <a class="header-menu-link" href="#">Контакты</a>
       </ul>
-      <img class="header-big-number" src="images/numbers-01.png" width="250" height="135" alt="большие цифры 01.">
     </header>
 
     <!--Слайдер-->
@@ -99,7 +50,7 @@
       <div class="main-info">
         <h1 class="visually-hidden">Блок слайдер с кнопками прокрутки</h1>
         <button class="left" type="button"></button>
-        <img class="slider-picture" src="images/copter-rest(1).jpg" width="560" height="560" alt="фотография квадрокоптера.">
+        <img class="slider-picture" src="images/copter-slide-1.png" width="560" height="560" alt="фотография квадрокоптера.">
         <button class="right" type="button"></button>
         <h2>Порхает как бабочка, жалит как пчела!</h2>
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -136,37 +87,31 @@
       <ul class="category">
         <li class="category-item">
           <a class="category-link" href="#">
-            <img class="virtual-reality" src="images/virtual.svg" width="160" height="160" alt="изображение очков виртуальной реальности.">
             <p>Виртуальная реальность</p>
           </a>
         </li>
         <li class="category-item">
           <a class="category-link" href="#">
-            <img class="monopod" src="images/monopod.svg" width="160" height="160" alt="изображение монопода с телефоном.">
             <p>Моноподы для селфи</p>
           </a>
         </li>
         <li class="category-item">
           <a class="category-link" href="#">
-            <img class="camera" src="images/action-camera.svg" width="160" height="160" alt="изображение экшн-камеры.">
             <p>Экшн-камера</p>
           </a>
         </li>
         <li class="category-item">
           <a class="category-link" href="#">
-            <img class="fitness-bracelet" src="images/fitness-bracelet.svg" width="160" height="160" alt="изображение фитнес браслета.">
             <p>Фитнес-браслеты</p>
           </a>
         </li>
         <li class="category-item">
           <a class="category-link" href="#">
-            <img class="smart-watches" src="images/watch.svg" width="160" height="160" alt="изображение умных часов.">
             <p>Умные часы</p>
           </a>
         </li>
         <li class="category-item">
           <a class="category-link" href="#">
-            <img class="copter" src="images/copter.jpg" width="160" height="160" alt="изображение квадрокоптера.">
             <p>Квадрокоптеры</p>
           </a>
         </li>
@@ -191,14 +136,11 @@
       <p>Мы с удовольствием доставим ваш товар прямо
         к вашему подъезду совершенно бесплатно! Ведь
         мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      <img class="delivery-men-icon" src="images/courier.svg" width="136" height="164" alt="изображение курьера с посылкой.">
     </section>
 
     <div class="order">
       <a class="order-link" href="#">
-        <img class="delivery-car" src="images/delivery-car.svg" width="47" height="31" alt="изображение машины доставки.">
         <p>Доставим редкий товар под заказ</p>
-        <img class="information" src="images/information.svg" width="40" height="40" alt="логотип информации.">
       </a>
     </div>
 
@@ -247,7 +189,6 @@
           <button class="subscription-button" type="submit">подписаться</button>
         </form>
       <div class="free">
-        <img class="green-check-mark" src="images/green-check-mark.svg" width="16" height="16" alt="зеленая галочка">
         <p class="subscription-text">Это бесплатно</p>
       </div>
     </section>
