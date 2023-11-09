@@ -7,25 +7,33 @@
   <body>
     <!--Шапка сайта-->
     <header class="main-header">
-      <a href="index.html" class="logo-site"><!--Логотип Device--></a>
+      <a href="index.html" class="logo-site">
+        <img class="logo" src="images/logo-site.svg" width="145" height="36" alt="Логотип сайта DEVICE.">
+      </a>
       <div>
         <form class="search-form" action="https://echo.htmlacademy.ru">
           <input class="search-string" type="text" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
 
-        <a href="#" class="account-name">Коля Петухов</a>
+        <a href="#" class="account">
+          <p class="header-text">Коля Петухов</p>
+        </a>
         <a href="#" class="account-exit">Выйти</a>
 
-        <a href="#" class="compare">Сравнить</a>
+        <a href="#" class="compare">
+          <p class="header-text">Сравнить</p>
+        </a>
 
         <a href="#" class="basket">
           <span class="number">2</span>
-          <p class="text-quantity">Корзина</p>
+          <p class="header-text">Корзина</p>
         </a>
       </div>
       <div class="header-catalog">
-        <a class="header-catalog-link" href="#">Каталог товаров</a>
+        <a class="header-catalog-link" href="#">
+          <p class="header-catalog-text">Каталог товаров</p>
+        </a>
       </div>
       <ul class="header-menu">
         <li class="header-menu-item">
@@ -46,10 +54,10 @@
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Гарантия</a>
+          <a class="breadcrumbs-link">Каталог товаров</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог</a>
+          <a class="breadcrumbs-link">Моноподы для селфи</a>
         </li>
       </ul>
     </section>
@@ -57,13 +65,13 @@
     <!--Меню Фильтр-->
     <main>
       <div class="filter">
-        <h2>Фильтр:</h2>
+        <h2 class="filter-text">Фильтр:</h2>
 
         <div class="cost-scale">
-          <p>Стоимость</p>
+          <p class="cost-scale-text">Стоимость</p>
         </div>
 
-        <p>Цвет</p>
+        <p class="filter-text">Цвет</p>
         <form action="#" method="post">
           <input type="checkbox" name="black" id="black-field" checked>
           <label for="black-field">Черный</label><br>
@@ -75,16 +83,15 @@
           <label for="red-field">Красный</label><br>
           <input type="checkbox" name="pink" id="pink-field">
           <label for="pink-field">Розовый</label><br>
-          <p>Bluetooth</p>
+          <p class="filter-text">Bluetooth</p>
           <label>
             <input type="radio" name="question" value="there-is">Есть
           </label>
           <label>
             <input type="radio" name="question" value="no">Нет
           </label>
+          <button class="show-button" type="submit">Показать</button>
         </form>
-        <button class="show-button" type="submit">Показать</button>
-
       </div>
 
       <!--Меню Сортировка-->
@@ -104,28 +111,28 @@
         <ul class="cards-item">
           <li class="card-1">
             <a href="#" class="card-1-link">
-              <img src="#" alt="Селфи-палка с телефоном">
+              <img class="amateur-selfie-stick" src="images/amateur-selfie-stick-rest.jpg" width="360" height="380" alt="Селфи-палка с телефоном.">
               <span class="name-card">Любительская селфи-палка</span>
               <span class="sale-name-card">500 р</span>
             </a>
           </li>
           <li class="card-2">
             <a href="#" class="card-2-link">
-              <img src="#" alt="Собранная селфи-палка">
+              <img class="professional-selfie-stick" src="images/professional-selfie-stick-rest.jpg" width="360" height="380" alt="Собранная селфи-палка.">
               <span class="name-card">Профессиональная селфи-палка</span>
               <span class="sale-name-card">1500 р</span>
             </a>
           </li>
           <li class="card-3">
             <a href="#" class="card-3-link">
-              <img src="#" alt="Непотопляемая селфи-палка">
+              <img class="unsinkable-selfie-stick" src="images/unsinkable-selfie-stick-rest.jpg" width="360" height="380" alt="Непотопляемая селфи-палка.">
               <span class="name-card">Непотопляемая селфи-палка</span>
               <span class="sale-name-card">2500 р</span>
             </a>
           </li>
           <li class="card-4">
             <a href="#" class="card-4-link">
-              <img src="#" alt="Рука селфи-палка">
+              <img class="selfie-stick-hand" src="images/selfie-stick-hand-rest.jpg" width="360" height="380" alt="Рука селфи-палка.">
               <span class="name-card">Селфи-палка "Следую за мной"</span>
               <span class="sale-name-card">1500 р</span>
             </a>
@@ -163,7 +170,9 @@
     <!--подвал сайта-->
     <footer>
       <div class="device">
-        <a class="logo-site" href="index.html"><img src="#" alt="логотип сайта"></a>
+        <a class="logo-site" href="index.html">
+          <img class="footer-logo" src="images/yellow-logo-site.svg" alt="логотип сайта." >
+        </a>
         <p class="device-text">Санкт-Петербург, Набережная
           реки Карповки, 5, литера П.</p>
       </div>
@@ -181,18 +190,26 @@
       <div class="social-list">
         <ul class="social-list-links">
           <li class="social-list-item">
-            <a href="https://telegram.org/"></a>
+            <a href="https://telegram.org/">
+              <img class="logo-telegramm" src="images/telegram-logo.svg" width="40" height="40" alt="логотип социальной сети телеграмм.">
+            </a>
           </li>
           <li class="social-list-item">
-            <a href="youtube.com"></a>
+            <a href="youtube.com">
+              <img class="logo-youtube" src="images/youtube-logo.svg" width="40" height="40" alt="логотип социальной сети ютуб.">
+            </a>
           </li>
           <li class="social-list-item">
-            <a href="http://x.com/"></a>
+            <a href="http://x.com/">
+              <img class="logo-x" src="images/twitter-logo.svg" width="40" height="40" alt="логотип социальнойсети твиттер.">
+            </a>
           </li>
         </ul>
       </div>
       <a class="contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 5812-12-12</a>
-      <a class="academy" href="https://htmlacademy.ru"></a>
+      <a class="academy" href="https://htmlacademy.ru">
+        <img class="logo-academy" src="images/logo-academy.svg" width="115" height="33" alt="логотип сайта htmlacademy.">
+      </a>
     </footer>
   </body>
 </html>
