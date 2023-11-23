@@ -139,23 +139,23 @@ body {
   line-height: 30px;
 }
 /*Выбор категории товаров*/
-li:ntl-child(1) .category-item {
-  background-color:url(images/virtual.svg);
+.category-item-vr {
+  background: url(../images/virtual.svg);
 }
-li:ntl-child(2) .category-item {
-  background-color:url(images/monopod.svg);
+.category-item-self {
+  background: url(../images/monopod.svg);
 }
-li:ntl-child(3) .category-item {
-  background-color:url(images/action-camera.svg);
+.category-item-ecam {
+  background: url(../images/action-camera.svg);
 }
-li:ntl-child(4) .category-item {
-  background-color:url(images/fitness-bracelet.svg);
+.category-item-fit {
+  background: url(../images/fitness-bracelet.svg);
 }
-li:ntl-child(5) .category-item {
-  background-color:url(images/watch.svg);
+.category-item-watch {
+  background: url(../images/watch.svg);
 }
-li:ntl-child(6) .category-item {
-  background-color:url(images/quadrocopters.svg);
+.category-item-copter {
+  background: url(../images/quadrocopters.svg);
 }
 
 
