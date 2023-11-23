@@ -3,7 +3,7 @@
   font-weight: 800;
   font-display: swap;
   font-style: normal;
-  src: url("fonts/raleway/raleway-800") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-weight: 400;
   font-display: swap;
   font-style: normal;
-  src: url("fonts/rubik/rubik") format("400");
+  src: url("../fonts/rubik/rubik-400.woff2") format("400");
 }
 
 @font-face {
@@ -19,12 +19,12 @@
   font-weight: 700;
   font-display: swap;
   font-style: normal;
-  src: url("fonts/rubik/rubik") format("700");
+  src: url("../fonts/rubik/rubik-700.woff2") format("700");
 }
 
 body {
-  font-family: "Raleway", "Rubik", sans-serif;
-  color: var(--basic-black, #000);
+  font-family: "Raleway", sans-serif;
+  color: #000000;
 }
   /* index.html */
 /*Шапка сайта*/
@@ -54,7 +54,6 @@ body {
 }
 
 .header-catalog-text {
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -64,7 +63,6 @@ body {
 }
 
 .header-menu-link {
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -74,7 +72,6 @@ body {
 }
 /*Слайдер*/
 .slider-text-head {
-  font-family: Raleway;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -82,7 +79,7 @@ body {
 }
 
 .slider-text {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -92,7 +89,6 @@ body {
 
 .more-detailed-link {
   text-align: center;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -110,7 +106,7 @@ body {
 }
 
 .option-name {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 16px;
   font-style: normal;
@@ -139,7 +135,6 @@ li:ntl-child(6) .category-item {
 
 
 .category-text {
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -148,9 +143,8 @@ li:ntl-child(6) .category-item {
 }
 /*Доставка*/
 .button-delivery {
-  color: var(--special-yellow-light, #FFE17F);
+  color: #ffe17f;
   text-align: center;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -161,7 +155,6 @@ li:ntl-child(6) .category-item {
 
 .button-warranty {
   text-align: center;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -172,7 +165,6 @@ li:ntl-child(6) .category-item {
 
 .button-credit {
   text-align: center;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -182,7 +174,6 @@ li:ntl-child(6) .category-item {
 }
 
 .delivery-head-text {
-  font-family: Raleway;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -190,7 +181,7 @@ li:ntl-child(6) .category-item {
 }
 
 .delivery-text {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -200,7 +191,6 @@ li:ntl-child(6) .category-item {
 
 .order-link-text {
   text-align: center;
-  font-family: Raleway;
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -210,7 +200,6 @@ li:ntl-child(6) .category-item {
 }
 /*Контакты*/
 .about-us-head-text {
-  font-family: Raleway;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -218,7 +207,7 @@ li:ntl-child(6) .category-item {
 }
 
 .about-us-text {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -237,7 +226,6 @@ li:ntl-child(6) .category-item {
 
 .more-about-us {
   text-align: center;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -247,7 +235,6 @@ li:ntl-child(6) .category-item {
 }
 
 .contacts-title {
-  font-family: Raleway;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -255,7 +242,7 @@ li:ntl-child(6) .category-item {
 }
 
 .contacts-text {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -264,7 +251,7 @@ li:ntl-child(6) .category-item {
 }
 
 .contacts-subtitle {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 24px;
   font-style: normal;
@@ -273,7 +260,7 @@ li:ntl-child(6) .category-item {
 }
 
 .contacts-address-text {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -282,7 +269,7 @@ li:ntl-child(6) .category-item {
 }
 
 .contacts-phone {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -292,7 +279,7 @@ li:ntl-child(6) .category-item {
 }
 
 .contacts-subtitle {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 24px;
   font-style: normal;
@@ -301,7 +288,7 @@ li:ntl-child(6) .category-item {
 }
 
 .contacts-schedule-item {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -311,7 +298,6 @@ li:ntl-child(6) .category-item {
 
 .write-to-us {
   text-align: center;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -321,7 +307,6 @@ li:ntl-child(6) .category-item {
 }
 /*Подписка*/
 .subscription-title {
-  font-family: Raleway;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -329,7 +314,7 @@ li:ntl-child(6) .category-item {
 }
 
 .subscription-text {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -338,7 +323,7 @@ li:ntl-child(6) .category-item {
 }
 
 .subscription-string {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -348,7 +333,6 @@ li:ntl-child(6) .category-item {
 
 .subscription-button {
   text-align: center;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -359,7 +343,7 @@ li:ntl-child(6) .category-item {
 
 /*footer*/
 .device-text {
-  color: var(--basic-white, #FFF);
+  color: #ffffff;
   font-family: Rubik;
   font-size: 16px;
   font-style: normal;
@@ -368,8 +352,7 @@ li:ntl-child(6) .category-item {
 }
 
 .footer-button-delivery {
-  color: var(--basic-white, #FFF);
-  font-family: Raleway;
+  color:#ffffff;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -379,7 +362,7 @@ li:ntl-child(6) .category-item {
 }
 
 .footer-contacts-phone {
-  color: var(--basic-white, #FFF);
+  color: #ffffff;
   font-family: Rubik;
   font-size: 16px;
   font-style: normal;
@@ -399,7 +382,7 @@ li:ntl-child(6) .category-item {
 }
 
 .account-exit {
-  color: var(--basic-black, #000);
+  color: #000000;
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -408,7 +391,6 @@ li:ntl-child(6) .category-item {
 }
 
 .category-title {
-  font-family: Raleway;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
@@ -424,7 +406,6 @@ li:ntl-child(6) .category-item {
 }
 /*Меню Фильтр*/
 .filter-text-title {
-  font-family: Raleway;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -453,7 +434,6 @@ li:ntl-child(6) .category-item {
 
 .show-button {
   text-align: center;
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -463,7 +443,6 @@ li:ntl-child(6) .category-item {
 }
 /*Меню Сортировка*/
 .sorting {
-  font-family: Raleway;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -491,7 +470,7 @@ li:ntl-child(6) .category-item {
 }
 
 .sale-name-card {
-  color: var(--basic-dark, #444);
+  color: #444444;
   text-align: right;
   font-family: Rubik;
   font-size: 18px;
@@ -502,7 +481,6 @@ li:ntl-child(6) .category-item {
 
 .download-more {
   text-align: center;
-  font-family: Raleway;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
@@ -512,7 +490,7 @@ li:ntl-child(6) .category-item {
 }
 /*Кнопки Назад/Вперед*/
 .back {
-  color: var(--basic-dark, #444);
+  color: #444444;
   font-family: Raleway;
   font-size: 18px;
   font-style: normal;
@@ -523,7 +501,7 @@ li:ntl-child(6) .category-item {
 }
 
 .page-numbers {
-  color: var(--basic-dark, #444);
+  color: #444444;
   text-align: center;
   font-family: Rubik;
   font-size: 16px;
@@ -533,7 +511,6 @@ li:ntl-child(6) .category-item {
 }
 
 .forward {
-  font-family: Raleway;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
