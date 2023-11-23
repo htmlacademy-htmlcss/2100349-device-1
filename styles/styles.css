@@ -45,7 +45,7 @@ body {
   text-align: center;
 }
 
-.header-text {
+.account {
   font-family: Rubik;
   font-size: 18px;
   font-style: normal;
@@ -53,7 +53,32 @@ body {
   line-height: 30px;
 }
 
-.header-catalog-text {
+.account-exit {
+  color: #000000;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.compare {
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.basket {
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.header-catalog-link {
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -134,7 +159,7 @@ li:ntl-child(6) .category-item {
 }
 
 
-.category-text {
+.category-link {
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -189,7 +214,7 @@ li:ntl-child(6) .category-item {
   line-height: 30px;
 }
 
-.order-link-text {
+.order-link {
   text-align: center;
   font-size: 20px;
   font-style: normal;
