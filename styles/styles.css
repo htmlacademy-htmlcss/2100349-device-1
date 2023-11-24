@@ -28,6 +28,10 @@ body {
 }
   /* index.html */
 /*Шапка сайта*/
+.main-header {
+  background-color: #FFE17F;
+}
+
 .search-string {
   font-family: Rubik;
   font-size: 16px;
@@ -331,6 +335,10 @@ body {
   text-transform: uppercase;
 }
 /*Подписка*/
+.subscription {
+  background-color: #F0F0F0;
+}
+
 .subscription-title {
   font-size: 50px;
   font-style: normal;
@@ -367,6 +375,10 @@ body {
 }
 
 /*footer*/
+.footer {
+  background-color: #444444;
+}
+
 .device-text {
   color: #ffffff;
   font-family: Rubik;
