@@ -11,7 +11,7 @@
   font-weight: 400;
   font-display: swap;
   font-style: normal;
-  src: url("../fonts/rubik/rubik-400.woff2") format("400");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-weight: 700;
   font-display: swap;
   font-style: normal;
-  src: url("../fonts/rubik/rubik-700.woff2") format("700");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
 }
 
 body {
@@ -29,11 +29,11 @@ body {
   /* index.html */
 /*Шапка сайта*/
 .main-header {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
 }
 
 .search-string {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -41,7 +41,7 @@ body {
 }
 
 .search-button {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -50,7 +50,7 @@ body {
 }
 
 .account {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -59,7 +59,7 @@ body {
 
 .account-exit {
   color: #000000;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -67,7 +67,7 @@ body {
 }
 
 .compare {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -75,7 +75,7 @@ body {
 }
 
 .basket {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -109,7 +109,7 @@ body {
 
 .slider-text {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -127,7 +127,7 @@ body {
 }
 
 .numeric-parameter {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
@@ -136,7 +136,7 @@ body {
 
 .option-name {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -144,22 +144,22 @@ body {
 }
 /*Выбор категории товаров*/
 .category-item-vr {
-  background: url(../images/virtual.svg);
+  background: url("../images/virtual.svg");
 }
 .category-item-self {
-  background: url(../images/monopod.svg);
+  background: url("../images/monopod.svg");
 }
 .category-item-ecam {
-  background: url(../images/action-camera.svg);
+  background: url("../images/action-camera.svg");
 }
 .category-item-fit {
-  background: url(../images/fitness-bracelet.svg);
+  background: url("../images/fitness-bracelet.svg");
 }
 .category-item-watch {
-  background: url(../images/watch.svg);
+  background: url("../images/watch.svg");
 }
 .category-item-copter {
-  background: url(../images/quadrocopters.svg);
+  background: url("../images/quadrocopters.svg");
 }
 
 
@@ -211,7 +211,7 @@ body {
 
 .delivery-text {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -237,7 +237,7 @@ body {
 
 .about-us-text {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -245,7 +245,7 @@ body {
 }
 
 .delivery-item {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -272,7 +272,7 @@ body {
 
 .contacts-text {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -281,7 +281,7 @@ body {
 
 .contacts-subtitle {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -290,7 +290,7 @@ body {
 
 .contacts-address-text {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -299,7 +299,7 @@ body {
 
 .contacts-phone {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -309,7 +309,7 @@ body {
 
 .contacts-subtitle {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -318,7 +318,7 @@ body {
 
 .contacts-schedule-item {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -336,7 +336,7 @@ body {
 }
 /*Подписка*/
 .subscription {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .subscription-title {
@@ -348,7 +348,7 @@ body {
 
 .subscription-text {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -357,7 +357,7 @@ body {
 
 .subscription-string {
   color: #444444;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -381,7 +381,7 @@ body {
 
 .device-text {
   color: #ffffff;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -400,7 +400,7 @@ body {
 
 .footer-contacts-phone {
   color: #ffffff;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -411,7 +411,7 @@ body {
 /* catalog.html */
 /*Шапка сайта*/
 .search-string-catalog {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -420,7 +420,7 @@ body {
 
 .account-exit {
   color: #000000;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -435,7 +435,7 @@ body {
 }
 /*Заголовок категории товаров*/
 .breadcrumbs-link {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -452,7 +452,7 @@ body {
 }
 
 .cost-scale-text {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -461,7 +461,7 @@ body {
 }
 
 .filter-text {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -489,7 +489,7 @@ body {
 }
 
 .popular {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -498,7 +498,7 @@ body {
 
 /*Карточки товаров*/
 .name-card {
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -509,7 +509,7 @@ body {
 .sale-name-card {
   color: #444444;
   text-align: right;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -528,7 +528,7 @@ body {
 /*Кнопки Назад/Вперед*/
 .back {
   color: #444444;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -540,7 +540,7 @@ body {
 .page-numbers {
   color: #444444;
   text-align: center;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
