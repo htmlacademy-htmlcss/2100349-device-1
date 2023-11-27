@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!--Шапка сайта-->
@@ -12,28 +13,20 @@
       </a>
       <div>
         <form class="search-form" action="https://echo.htmlacademy.ru">
-          <input class="search-string" type="text" placeholder="Поиск по сайту">
+          <input class="search-string-catalog" type="text" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
 
-        <a href="#" class="account">
-          <p class="header-text">Коля Петухов</p>
-        </a>
+        <a href="#" class="account">Коля Петухов</a>
+
         <a href="#" class="account-exit">Выйти</a>
 
-        <a href="#" class="compare">
-          <p class="header-text">Сравнить</p>
-        </a>
+        <a href="#" class="compare">Сравнить</a>
 
-        <a href="#" class="basket">
-          <span class="number">2</span>
-          <p class="header-text">Корзина</p>
-        </a>
+        <a href="#" class="basket"><span class="number">2</span>Корзина</a>
       </div>
       <div class="header-catalog">
-        <a class="header-catalog-link" href="#">
-          <p class="header-catalog-text">Каталог товаров</p>
-        </a>
+        <a class="header-catalog-link" href="#">Каталог товаров</a>
       </div>
       <ul class="header-menu">
         <li class="header-menu-item">
@@ -65,7 +58,7 @@
     <!--Меню Фильтр-->
     <main>
       <div class="filter">
-        <h2 class="filter-text">Фильтр:</h2>
+        <h2 class="filter-text-title">Фильтр:</h2>
 
         <div class="cost-scale">
           <p class="cost-scale-text">Стоимость</p>
@@ -133,7 +126,7 @@
           <li class="card-4">
             <a href="#" class="card-4-link">
               <img class="selfie-stick-hand" src="images/selfie-stick-hand-rest.jpg" width="360" height="380" alt="Рука селфи-палка.">
-              <span class="name-card">Селфи-палка "Следую за мной"</span>
+              <span class="name-card">Селфи-палка "Следуй за мной"</span>
               <span class="sale-name-card">1500 р</span>
             </a>
           </li>
@@ -148,27 +141,27 @@
             <a href="#" class="back">Назад</a>
           </li>
           <li>
-            <a href="#" class="back">1</a>
+            <a href="#" class="page-numbers">1</a>
           </li>
           <li>
-            <a href="#" class="back">2</a>
+            <a href="#" class="page-numbers">2</a>
           </li>
           <li>
-            <a href="#" class="back">3</a>
+            <a href="#" class="page-numbers">3</a>
           </li>
           <li><span>...</span></li>
           <li>
-            <a href="#" class="back">15</a>
+            <a href="#" class="page-numbers">15</a>
           </li>
           <li>
-            <a href="#" class="back">Вперёд</a>
+            <a href="#" class="forward">Вперёд</a>
           </li>
         </ul>
       </div>
     </main>
 
     <!--подвал сайта-->
-    <footer>
+    <footer class="footer">
       <div class="device">
         <a class="logo-site" href="index.html">
           <img class="footer-logo" src="images/yellow-logo-site.svg" alt="логотип сайта." >
