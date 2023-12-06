@@ -109,7 +109,7 @@ html {
 }
 /*Слайдер*/
 .main-container {
-  flex-grow: 1;
+  
   width: 1160px;
   margin: 0 auto;
 }
