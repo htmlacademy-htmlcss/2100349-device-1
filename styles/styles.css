@@ -109,7 +109,6 @@ html {
 }
 /*Слайдер*/
 .main-container {
-  
   width: 1160px;
   margin: 0 auto;
 }
@@ -528,6 +527,9 @@ html {
 }
 
 /*Карточки товаров*/
+.cards {
+  flex-wrap: wrap;
+}
 .name-card {
   font-family: Rubik, sans-serif;
   font-size: 18px;

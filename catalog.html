@@ -59,107 +59,109 @@
 
     <!--Меню Фильтр-->
     <main>
-      <div class="filter">
-        <h2 class="filter-text-title">Фильтр:</h2>
+      <div class="main-container">
+        <div class="filter">
+          <h2 class="filter-text-title">Фильтр:</h2>
 
-        <div class="cost-scale">
-          <p class="cost-scale-text">Стоимость</p>
+          <div class="cost-scale">
+            <p class="cost-scale-text">Стоимость</p>
+          </div>
+
+          <p class="filter-text">Цвет</p>
+          <form action="#" method="post">
+            <input type="checkbox" name="black" id="black-field" checked>
+            <label for="black-field">Черный</label><br>
+            <input type="checkbox" name="white" id="white-field" checked>
+            <label for="white-field">Белый</label><br>
+            <input type="checkbox" name="sblue" id="blue-field">
+            <label for="blue-field">Синий</label><br>
+            <input type="checkbox" name="red" id="red-field">
+            <label for="red-field">Красный</label><br>
+            <input type="checkbox" name="pink" id="pink-field">
+            <label for="pink-field">Розовый</label><br>
+            <p class="filter-text">Bluetooth</p>
+            <label>
+              <input type="radio" name="question" value="there-is">Есть
+            </label>
+            <label>
+              <input type="radio" name="question" value="no">Нет
+            </label>
+            <button class="show-button" type="submit">Показать</button>
+          </form>
         </div>
 
-        <p class="filter-text">Цвет</p>
-        <form action="#" method="post">
-          <input type="checkbox" name="black" id="black-field" checked>
-          <label for="black-field">Черный</label><br>
-          <input type="checkbox" name="white" id="white-field" checked>
-          <label for="white-field">Белый</label><br>
-          <input type="checkbox" name="sblue" id="blue-field">
-          <label for="blue-field">Синий</label><br>
-          <input type="checkbox" name="red" id="red-field">
-          <label for="red-field">Красный</label><br>
-          <input type="checkbox" name="pink" id="pink-field">
-          <label for="pink-field">Розовый</label><br>
-          <p class="filter-text">Bluetooth</p>
-          <label>
-            <input type="radio" name="question" value="there-is">Есть
-          </label>
-          <label>
-            <input type="radio" name="question" value="no">Нет
-          </label>
-          <button class="show-button" type="submit">Показать</button>
-        </form>
-      </div>
+        <!--Меню Сортировка-->
+        <div class="catalog">
+          <div class="catalog-sort">
+            <h2 class="sorting">Сортировка:</h2>
 
-      <!--Меню Сортировка-->
-      <div class="catalog">
-        <div>
-          <h2 class="sorting">Сортировка:</h2>
+            <select name="select-popular">
+              <option value="popular">Популярные</option>
+            </select>
 
-          <select name="select-popular">
-            <option value="popular">Популярные</option>
-          </select>
+            <a href="#" class="up-arrow"></a>
+            <a href="#" class="down-arrow"></a>
+          </div>
 
-          <a href="#" class="up-arrow"></a>
-          <a href="#" class="down-arrow"></a>
-        </div>
+          <!--Карточки товаров-->
+          <div class="cards">
+            <ul class="cards-list">
+              <li class="card-item">
+                <a href="#" class="card-link">
+                  <img class="amateur-selfie-stick" src="images/amateur-selfie-stick-rest.jpg" width="360" height="380" alt="Селфи-палка с телефоном.">
+                  <span class="name-card">Любительская селфи-палка</span>
+                  <span class="sale-name-card">500 р</span>
+                </a>
+              </li>
+              <li class="card-item">
+                <a href="#" class="card-link">
+                  <img class="professional-selfie-stick" src="images/professional-selfie-stick-rest.jpg" width="360" height="380" alt="Собранная селфи-палка.">
+                  <span class="name-card">Профессиональная селфи-палка</span>
+                  <span class="sale-name-card">1500 р</span>
+                </a>
+              </li>
+              <li class="card-item">
+                <a href="#" class="card-link">
+                  <img class="unsinkable-selfie-stick" src="images/unsinkable-selfie-stick-rest.jpg" width="360" height="380" alt="Непотопляемая селфи-палка.">
+                  <span class="name-card">Непотопляемая селфи-палка</span>
+                  <span class="sale-name-card">2500 р</span>
+                </a>
+              </li>
+              <li class="card-item">
+                <a href="#" class="card-link">
+                  <img class="selfie-stick-hand" src="images/selfie-stick-hand-rest.jpg" width="360" height="380" alt="Рука селфи-палка.">
+                  <span class="name-card">Селфи-палка "Следуй за мной"</span>
+                  <span class="sale-name-card">1500 р</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="download-more" type="button">Загрузить еще</button>
 
-        <!--Карточки товаров-->
-        <div class="cards">
-          <ul class="cards-item">
-            <li class="card-1">
-              <a href="#" class="card-1-link">
-                <img class="amateur-selfie-stick" src="images/amateur-selfie-stick-rest.jpg" width="360" height="380" alt="Селфи-палка с телефоном.">
-                <span class="name-card">Любительская селфи-палка</span>
-                <span class="sale-name-card">500 р</span>
-              </a>
-            </li>
-            <li class="card-2">
-              <a href="#" class="card-2-link">
-                <img class="professional-selfie-stick" src="images/professional-selfie-stick-rest.jpg" width="360" height="380" alt="Собранная селфи-палка.">
-                <span class="name-card">Профессиональная селфи-палка</span>
-                <span class="sale-name-card">1500 р</span>
-              </a>
-            </li>
-            <li class="card-3">
-              <a href="#" class="card-3-link">
-                <img class="unsinkable-selfie-stick" src="images/unsinkable-selfie-stick-rest.jpg" width="360" height="380" alt="Непотопляемая селфи-палка.">
-                <span class="name-card">Непотопляемая селфи-палка</span>
-                <span class="sale-name-card">2500 р</span>
-              </a>
-            </li>
-            <li class="card-4">
-              <a href="#" class="card-4-link">
-                <img class="selfie-stick-hand" src="images/selfie-stick-hand-rest.jpg" width="360" height="380" alt="Рука селфи-палка.">
-                <span class="name-card">Селфи-палка "Следуй за мной"</span>
-                <span class="sale-name-card">1500 р</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <button class="download-more" type="button">Загрузить еще</button>
-
-        <!--Кнопки Назад/Вперед-->
-        <div class="page-numbers">
-          <ul>
-            <li>
-              <a href="#" class="back">Назад</a>
-            </li>
-            <li>
-              <a href="#" class="page-numbers">1</a>
-            </li>
-            <li>
-              <a href="#" class="page-numbers">2</a>
-            </li>
-            <li>
-              <a href="#" class="page-numbers">3</a>
-            </li>
-            <li><span>...</span></li>
-            <li>
-              <a href="#" class="page-numbers">15</a>
-            </li>
-            <li>
-              <a href="#" class="forward">Вперёд</a>
-            </li>
-          </ul>
+          <!--Кнопки Назад/Вперед-->
+          <div class="page-numbers">
+            <ul>
+              <li>
+                <a href="#" class="back">Назад</a>
+              </li>
+              <li>
+                <a href="#" class="page-numbers">1</a>
+              </li>
+              <li>
+                <a href="#" class="page-numbers">2</a>
+              </li>
+              <li>
+                <a href="#" class="page-numbers">3</a>
+              </li>
+              <li><span>...</span></li>
+              <li>
+                <a href="#" class="page-numbers">15</a>
+              </li>
+              <li>
+                <a href="#" class="forward">Вперёд</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
