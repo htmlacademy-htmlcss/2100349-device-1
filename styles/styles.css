@@ -40,6 +40,10 @@ html {
   background-color: #ffe17f;
 }
 
+.header-option {
+  display: flex;
+}
+
 .search-string {
   font-family: Rubik, sans-serif;
   font-size: 16px;
@@ -99,6 +103,10 @@ html {
   text-transform: uppercase;
 }
 
+.header-menu {
+  display: flex;
+}
+
 .header-menu-link {
   font-size: 18px;
   font-style: normal;
@@ -108,6 +116,10 @@ html {
   text-transform: uppercase;
 }
 /*Слайдер*/
+.main-info {
+  display: flex;
+}
+
 .main-container {
   width: 1160px;
   margin: 0 auto;
@@ -158,6 +170,10 @@ html {
 /*Выбор категории товаров*/
 .cards {
   margin-top: 70px;
+}
+
+.category {
+  display: flex;
 }
 
 .category-item-vr {
@@ -407,6 +423,10 @@ html {
 /*footer*/
 .footer {
   background-color: #444444;
+}
+
+.footer-content {
+  display: flex;
 }
 
 .device-text {
