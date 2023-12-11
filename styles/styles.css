@@ -484,6 +484,7 @@ html {
   line-height: 50px;
 }
 /*Заголовок категории товаров*/
+
 .breadcrumbs-link {
   font-family: Rubik, sans-serif;
   font-size: 16px;
@@ -529,6 +530,7 @@ html {
   text-transform: uppercase;
 }
 /*Меню Сортировка*/
+
 .sorting {
   font-size: 16px;
   font-style: normal;
@@ -591,6 +593,10 @@ html {
 }
 
 .page-numbers {
+  
+}
+
+.page-number-items {
   color: #444444;
   text-align: center;
   font-family: Rubik, sans-serif;

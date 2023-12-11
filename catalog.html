@@ -7,42 +7,40 @@
   </head>
   <body>
     <!--Шапка сайта-->
-    <header class="main-header">
-      <div class="main-container">
-        <a href="index.html" class="logo-site">
-          <img class="logo" src="images/logo-site.svg" width="145" height="36" alt="Логотип сайта DEVICE.">
-        </a>
-        <div class="header-option">
-          <form class="search-form" action="https://echo.htmlacademy.ru">
-            <input class="search-string-catalog" type="text" placeholder="Поиск по сайту">
-            <button class="search-button" type="submit">Найти</button>
-          </form>
+    <header class="main-container main-header">
+      <a href="index.html" class="logo-site">
+        <img class="logo" src="images/logo-site.svg" width="145" height="36" alt="Логотип сайта DEVICE.">
+      </a>
+      <div class="header-option">
+        <form class="search-form" action="https://echo.htmlacademy.ru">
+          <input class="search-string-catalog" type="text" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
 
-          <a href="#" class="account">Коля Петухов</a>
+        <a href="#" class="account">Коля Петухов</a>
 
-          <a href="#" class="account-exit">Выйти</a>
+        <a href="#" class="account-exit">Выйти</a>
 
-          <a href="#" class="compare">Сравнить</a>
+        <a href="#" class="compare">Сравнить</a>
 
-          <a href="#" class="basket"><span class="number">2</span>Корзина</a>
-        </div>
-        <div class="header-catalog">
-          <a class="header-catalog-link" href="#">Каталог товаров</a>
-        </div>
-        <ul class="header-menu">
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="#">Доставка</a>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="#">Гарантия</a>
-          <li class="header-menu-item">
-            <a class="header-menu-link" href="#">Контакты</a>
-        </ul>
+        <a href="#" class="basket"><span class="number">2</span>Корзина</a>
       </div>
+      <div class="header-catalog">
+        <a class="header-catalog-link" href="#">Каталог товаров</a>
+      </div>
+      <ul class="header-menu">
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Доставка</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Гарантия</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="#">Контакты</a>
+      </ul>
     </header>
 
     <!--Заголовок категории товаров-->
     <section class="main-container">
-      <h1 class="visually-hidden">Страница с карточками товаров</h1>
+      <h1 class="visually-hidden" hidden>Страница с карточками товаров</h1>
       <h2 class="category-title">Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
@@ -140,22 +138,22 @@
 
           <!--Кнопки Назад/Вперед-->
           <div class="page-numbers">
-            <ul>
+            <ul class="page-numbers-list">
               <li>
                 <a href="#" class="back">Назад</a>
               </li>
               <li>
-                <a href="#" class="page-numbers">1</a>
+                <a href="#" class="page-number-items">1</a>
               </li>
               <li>
-                <a href="#" class="page-numbers">2</a>
+                <a href="#" class="page-number-items">2</a>
               </li>
               <li>
-                <a href="#" class="page-numbers">3</a>
+                <a href="#" class="page-number-items">3</a>
               </li>
               <li><span>...</span></li>
               <li>
-                <a href="#" class="page-numbers">15</a>
+                <a href="#" class="page-number-items">15</a>
               </li>
               <li>
                 <a href="#" class="forward">Вперёд</a>
@@ -168,47 +166,50 @@
 
     <!--подвал сайта-->
     <footer class="main-container footer">
-      <div class="device">
-        <a class="logo-site" href="index.html">
-          <img class="footer-logo" src="images/yellow-logo-site.svg" alt="логотип сайта." >
-        </a>
-        <p class="device-text">Санкт-Петербург, Набережная
-          реки Карповки, 5, литера П.</p>
-      </div>
-      <ul class="footer-menu-delivery">
-        <li>
-          <a class="footer-button-delivery" href="#">Доставка</a>
-        </li>
-        <li>
-          <a class="footer-button-warranty" href="#">Гарантия</a>
-        </li>
-        <li>
-          <a class="footer-button-credit" href="#">Кредит</a>
-        </li>
-      </ul>
-      <div class="social-list">
-        <ul class="social-list-links">
-          <li class="social-list-item">
-            <a href="https://telegram.org/">
-              <img class="logo-telegramm" src="images/telegram-logo.svg" width="40" height="40" alt="логотип социальной сети телеграмм.">
-            </a>
+      <div class="footer-content">
+        <div class="device">
+          <a class="logo-site" href="index.html">
+            <img class="footer-logo" src="images/yellow-logo-site.svg" alt="логотип сайта." >
+          </a>
+          <p class="device-text">Санкт-Петербург, Набережная
+            реки Карповки, 5, литера П.</p>
+        </div>
+        <ul class="footer-menu-delivery">
+          <li>
+            <a class="footer-button-delivery" href="#">Доставка</a>
           </li>
-          <li class="social-list-item">
-            <a href="youtube.com">
-              <img class="logo-youtube" src="images/youtube-logo.svg" width="40" height="40" alt="логотип социальной сети ютуб.">
-            </a>
+          <li>
+            <a class="footer-button-warranty" href="#">Гарантия</a>
           </li>
-          <li class="social-list-item">
-            <a href="http://x.com/">
-              <img class="logo-x" src="images/twitter-logo.svg" width="40" height="40" alt="логотип социальнойсети твиттер.">
-            </a>
+          <li>
+            <a class="footer-button-credit" href="#">Кредит</a>
           </li>
         </ul>
+        <div class="social-list">
+          <ul class="social-list-links">
+            <li class="social-list-item">
+              <a href="https://telegram.org/">
+                <img class="logo-telegramm" src="images/telegram-logo.svg" width="40" height="40" alt="логотип социальной сети телеграмм.">
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="youtube.com">
+                <img class="logo-youtube" src="images/youtube-logo.svg" width="40" height="40" alt="логотип социальной сети ютуб.">
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="http://x.com/">
+                <img class="logo-x" src="images/twitter-logo.svg" width="40" height="40" alt="логотип социальнойсети твиттер.">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a class="footer-contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+        <a class="academy" href="https://htmlacademy.ru">
+          <img class="logo-academy" src="images/logo-academy.svg" width="115" height="33" alt="логотип сайта htmlacademy.">
+        </a>
       </div>
-      <a class="contacts-phone" href="tel:+7(812)812-12-12">+7 (812) 5812-12-12</a>
-      <a class="academy" href="https://htmlacademy.ru">
-        <img class="logo-academy" src="images/logo-academy.svg" width="115" height="33" alt="логотип сайта htmlacademy.">
-      </a>
+    </div>
     </footer>
   </body>
 </html>
