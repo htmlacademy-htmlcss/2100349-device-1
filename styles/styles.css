@@ -105,6 +105,7 @@ html {
 
 .header-menu {
   display: flex;
+  list-style-type: none;
 }
 
 .header-menu-link {
@@ -174,6 +175,7 @@ html {
 
 .category {
   display: flex;
+  list-style-type: none;
 }
 
 .category-item-vr {
@@ -206,6 +208,10 @@ html {
 /*Доставка*/
 .delivery {
   margin-top: 70px;
+}
+
+.menu-delivery {
+  list-style-type: none;
 }
 
 .button-delivery {
@@ -361,6 +367,10 @@ html {
   line-height: 30px;
 }
 
+.contacts-schedule {
+  list-style-type: none;
+}
+
 .contacts-schedule-item {
   color: #444444;
   font-family: Rubik, sans-serif;
@@ -438,6 +448,10 @@ html {
   line-height: 20px;
 }
 
+.footer-menu-delivery {
+  list-style-type: none;
+}
+
 .footer-button-delivery {
   color:#ffffff;
   font-size: 18px;
@@ -446,6 +460,10 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+}
+
+.social-list-links {
+  list-style-type: none;
 }
 
 .footer-contacts-phone {
@@ -670,4 +688,15 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
