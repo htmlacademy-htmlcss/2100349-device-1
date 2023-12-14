@@ -38,10 +38,19 @@ html {
 /*Шапка сайта*/
 .main-header {
   background-color: #ffe17f;
+  padding-top: 15px;
+}
+
+.logo-site {
+  display: block;
+  padding-top: 5px;
+  padding-left: 60px;
 }
 
 .header-option {
   display: flex;
+  padding-left: 60px;
+  padding-top: 30px;
 }
 
 .search-string {
@@ -50,6 +59,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+
 }
 
 .search-button {
@@ -94,6 +104,12 @@ html {
   line-height: 30px;
 }
 
+.header-catalog {
+  display: flex;
+  flex-direction: row;
+  padding-left: 60px;
+}
+
 .header-catalog-link {
   font-size: 18px;
   font-style: normal;
@@ -101,11 +117,14 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .header-menu {
   display: flex;
   list-style-type: none;
+  padding-top: 13px;
+
 }
 
 .header-menu-link {
@@ -115,6 +134,7 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  padding-left: 45px;
 }
 /*Слайдер*/
 .main-info {
@@ -124,6 +144,10 @@ html {
 .main-container {
   width: 1160px;
   margin: 0 auto;
+}
+
+.slide-description {
+  margin-left: 40px;
 }
 
 .slider-text-head {
@@ -140,16 +164,24 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  display: block;
+  padding-top: 29px;
 }
 
 .more-detailed-link {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  display: block;
+  padding-top: 50px;
+}
+.parameters {
+  display: flex;
+  padding-top: 50px;
 }
 
 .numeric-parameter {
@@ -167,6 +199,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+
 }
 /*Выбор категории товаров*/
 .cards-category {
@@ -204,6 +237,10 @@ html {
   font-weight: 800;
   line-height: 24px;
   letter-spacing: -0.36px;
+  display: block;
+  padding-right: 40px;
+  width: 160px;
+  height: 253px;
 }
 /*Доставка*/
 .delivery {
@@ -223,6 +260,8 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  display: block;
+  margin-bottom: 35px;
 }
 
 .button-warranty {
@@ -233,6 +272,8 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  display: block;
+  margin-bottom: 35px;
 }
 
 .button-credit {
