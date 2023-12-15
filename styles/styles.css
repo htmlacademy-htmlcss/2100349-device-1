@@ -247,6 +247,17 @@ html {
   margin-top: 70px;
 }
 
+.delivery-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.delivery-container-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 116px;
+}
+
 .menu-delivery {
   list-style-type: none;
 }
@@ -306,6 +317,11 @@ html {
   margin-top: 70px;
 }
 
+.delivery-car {
+  width: 125px;
+  height: 100px;
+}
+
 .order-link {
   text-align: center;
   font-size: 20px;
@@ -314,10 +330,14 @@ html {
   line-height: normal;
   letter-spacing: 4px;
   text-transform: uppercase;
+  width: 1160px;
+  height: auto;
 }
 /*Контакты*/
 .info {
   margin-top: 70px;
+  display: flex;
+  flex-direction: row;
 }
 
 .about-us-head-text {
@@ -334,6 +354,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  display: block;
+  padding-bottom: 30px;
 }
 
 .delivery-item {
@@ -343,6 +365,7 @@ html {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
+  padding-bottom: 19px;
 }
 
 .more-about-us {
@@ -360,6 +383,10 @@ html {
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
+}
+
+.contacts {
+  margin-left: 108px;
 }
 
 .contacts-text {
@@ -436,11 +463,17 @@ html {
   margin-top: 70px;
 }
 
+.subscription-content {
+  display: block;
+  flex-direction: row;
+}
+
 .subscription-title {
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
+  display: block;
 }
 
 .subscription-text {
