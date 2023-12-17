@@ -569,17 +569,20 @@ html {
   line-height: 30px;
 }
 
+/*Заголовок категории товаров*/
+
 .category-title {
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
+  display: block;
+  padding-left: 60px;
 }
-/*Заголовок категории товаров*/
 
 .breadcrumbs {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 60px;
   margin: 0;
   display: flex;
 }
@@ -606,6 +609,7 @@ html {
 
 .filter {
   width: 320px;
+  padding-left: 60px;
 }
 
 .filter-text-title {
