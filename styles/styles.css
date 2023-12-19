@@ -212,22 +212,28 @@ html {
 }
 
 .category-item-vr {
-  background: url("../images/virtual.svg");
+  background-image: url("../images/virtual.svg");
+  background-repeat: no-repeat;
 }
 .category-item-self {
-  background: url("../images/monopod.svg");
+  background-image: url("../images/monopod.svg");
+  background-repeat: no-repeat;
 }
 .category-item-ecam {
-  background: url("../images/action-camera.svg");
+  background-image: url("../images/action-camera.svg");
+  background-repeat: no-repeat;
 }
 .category-item-fit {
-  background: url("../images/fitness-bracelet.svg");
+  background-image: url("../images/fitness-bracelet.svg");
+  background-repeat: no-repeat;
 }
 .category-item-watch {
-  background: url("../images/watch.svg");
+  background-image: url("../images/watch.svg");
+  background-repeat: no-repeat;
 }
 .category-item-copter {
-  background: url("../images/quadrocopters.svg");
+  background-image: url("../images/quadrocopters.svg");
+  background-repeat: no-repeat;
 }
 
 
@@ -249,7 +255,6 @@ html {
 
 .delivery-container {
   display: flex;
-  flex-direction: row;
 }
 
 .delivery-container-text {
@@ -315,11 +320,16 @@ html {
 
 .order {
   margin-top: 70px;
+  background-color: #f0f0f0;
 }
 
 .delivery-car {
   width: 125px;
   height: 100px;
+  background-color: #ffe17f;
+  background-image: url(../images/delivery-car.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .order-link {
@@ -608,7 +618,7 @@ html {
 }
 
 .filter {
-  width: 320px;
+  width: 260px;
   padding-left: 60px;
 }
 
