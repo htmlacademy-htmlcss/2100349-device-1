@@ -322,15 +322,6 @@ html {
   background-color: #f0f0f0;
 }
 
-.delivery-car {
-  width: 125px;
-  height: 100px;
-  background-color: #ffe17f;
-  background-image: url(../images/delivery-car.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .order-link {
   display: flex;
   flex-direction: column-reverse;
@@ -342,7 +333,26 @@ html {
   letter-spacing: 4px;
   text-transform: uppercase;
   width: 1160px;
-  min-height: 20px;
+  min-height: 100px;
+}
+
+.order-link::before {
+  width: 125px;
+  height: 100px;
+  background-color: #ffe17f;
+  background-image: url(../images/delivery-car.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.order-link::after {
+  display: flex;
+  width: 125px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background-image: url(../images/information.svg);
 }
 /*Контакты*/
 .info {
