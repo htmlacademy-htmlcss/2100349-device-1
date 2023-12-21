@@ -527,10 +527,21 @@ html {
 /*footer*/
 .footer {
   background-color: #444444;
+  min-height: 321px;
 }
 
 .footer-content {
   display: flex;
+}
+
+.device {
+  width: 234px;
+  height: 182px;
+  margin-top: 62px;
+}
+
+.logo-site-footer {
+  display: block;
 }
 
 .device-text {
@@ -540,10 +551,17 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  padding-top: 35px;
+}
+
+.footer-link {
+  padding-left: 124px;
+  padding-top: 137px;
 }
 
 .footer-menu-delivery {
   list-style-type: none;
+  display: flex;
 }
 
 .footer-button-delivery {
@@ -556,8 +574,44 @@ html {
   text-transform: uppercase;
 }
 
+.footer-button-warranty {
+  color:#ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  padding-left: 35px;
+}
+
+.footer-button-credit {
+  color:#ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  padding-left: 35px;
+}
+
+.social-list {
+  padding-top: 62px;
+}
+
 .social-list-links {
   list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-contacts {
+  width: 175px;
+  height: 116px;
+  padding-top: 140px;
+  padding-left: 183px;
 }
 
 .footer-contacts-phone {
@@ -568,6 +622,14 @@ html {
   font-weight: 400;
   line-height: 20px;
   text-decoration-line: underline;
+  display: block;
+  padding-top: 13px;
+}
+
+.academy {
+  display: block;
+  padding-top: 63px;
+  padding-left: 61px;
 }
 
 /* catalog.html */
