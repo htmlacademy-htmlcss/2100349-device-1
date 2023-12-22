@@ -38,10 +38,19 @@ html {
 /*Шапка сайта*/
 .main-header {
   background-color: #ffe17f;
+  padding-top: 15px;
+}
+
+.logo-site {
+  display: block;
+  padding-top: 5px;
+  padding-left: 60px;
 }
 
 .header-option {
   display: flex;
+  padding-left: 60px;
+  padding-top: 30px;
 }
 
 .search-string {
@@ -50,6 +59,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+
 }
 
 .search-button {
@@ -94,6 +104,11 @@ html {
   line-height: 30px;
 }
 
+.header-catalog {
+  display: flex;
+  padding-left: 60px;
+}
+
 .header-catalog-link {
   font-size: 18px;
   font-style: normal;
@@ -101,10 +116,14 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 .header-menu {
   display: flex;
+  list-style-type: none;
+  padding-top: 13px;
+
 }
 
 .header-menu-link {
@@ -114,6 +133,7 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  padding-left: 45px;
 }
 /*Слайдер*/
 .main-info {
@@ -123,6 +143,10 @@ html {
 .main-container {
   width: 1160px;
   margin: 0 auto;
+}
+
+.slide-description {
+  margin-left: 40px;
 }
 
 .slider-text-head {
@@ -139,16 +163,24 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  display: block;
+  padding-top: 29px;
 }
 
 .more-detailed-link {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  display: block;
+  padding-top: 50px;
+}
+.parameters {
+  display: flex;
+  padding-top: 50px;
 }
 
 .numeric-parameter {
@@ -166,6 +198,7 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+
 }
 /*Выбор категории товаров*/
 .cards-category {
@@ -174,25 +207,32 @@ html {
 
 .category {
   display: flex;
+  list-style-type: none;
 }
 
 .category-item-vr {
-  background: url("../images/virtual.svg");
+  background-image: url("../images/virtual.svg");
+  background-repeat: no-repeat;
 }
 .category-item-self {
-  background: url("../images/monopod.svg");
+  background-image: url("../images/monopod.svg");
+  background-repeat: no-repeat;
 }
 .category-item-ecam {
-  background: url("../images/action-camera.svg");
+  background-image: url("../images/action-camera.svg");
+  background-repeat: no-repeat;
 }
 .category-item-fit {
-  background: url("../images/fitness-bracelet.svg");
+  background-image: url("../images/fitness-bracelet.svg");
+  background-repeat: no-repeat;
 }
 .category-item-watch {
-  background: url("../images/watch.svg");
+  background-image: url("../images/watch.svg");
+  background-repeat: no-repeat;
 }
 .category-item-copter {
-  background: url("../images/quadrocopters.svg");
+  background-image: url("../images/quadrocopters.svg");
+  background-repeat: no-repeat;
 }
 
 
@@ -202,10 +242,28 @@ html {
   font-weight: 800;
   line-height: 24px;
   letter-spacing: -0.36px;
+  display: block;
+  padding-right: 40px;
+  width: 160px;
+  height: 253px;
 }
 /*Доставка*/
 .delivery {
   margin-top: 70px;
+}
+
+.delivery-container {
+  display: flex;
+}
+
+.delivery-container-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 116px;
+}
+
+.menu-delivery {
+  list-style-type: none;
 }
 
 .button-delivery {
@@ -217,6 +275,8 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  display: block;
+  margin-bottom: 35px;
 }
 
 .button-warranty {
@@ -227,6 +287,8 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  display: block;
+  margin-bottom: 35px;
 }
 
 .button-credit {
@@ -257,9 +319,12 @@ html {
 
 .order {
   margin-top: 70px;
+  background-color: #f0f0f0;
 }
 
 .order-link {
+  display: flex;
+  flex-direction: column-reverse;
   text-align: center;
   font-size: 20px;
   font-style: normal;
@@ -267,10 +332,32 @@ html {
   line-height: normal;
   letter-spacing: 4px;
   text-transform: uppercase;
+  width: 1160px;
+  min-height: 100px;
+}
+
+.order-link::before {
+  width: 125px;
+  height: 100px;
+  background-color: #ffe17f;
+  background-image: url(../images/delivery-car.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.order-link::after {
+  display: flex;
+  width: 125px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background-image: url(../images/information.svg);
 }
 /*Контакты*/
 .info {
   margin-top: 70px;
+  display: flex;
 }
 
 .about-us-head-text {
@@ -287,6 +374,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  display: block;
+  padding-bottom: 30px;
 }
 
 .delivery-item {
@@ -296,6 +385,7 @@ html {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
+  padding-bottom: 19px;
 }
 
 .more-about-us {
@@ -313,6 +403,10 @@ html {
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
+}
+
+.contacts {
+  margin-left: 108px;
 }
 
 .contacts-text {
@@ -361,6 +455,10 @@ html {
   line-height: 30px;
 }
 
+.contacts-schedule {
+  list-style-type: none;
+}
+
 .contacts-schedule-item {
   color: #444444;
   font-family: Rubik, sans-serif;
@@ -385,11 +483,17 @@ html {
   margin-top: 70px;
 }
 
+.subscription-content {
+  display: block;
+  flex-direction: row;
+}
+
 .subscription-title {
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
+  display: block;
 }
 
 .subscription-text {
@@ -423,10 +527,21 @@ html {
 /*footer*/
 .footer {
   background-color: #444444;
+  min-height: 321px;
 }
 
 .footer-content {
   display: flex;
+}
+
+.device {
+  width: 234px;
+  height: 182px;
+  margin-top: 62px;
+}
+
+.logo-site-footer {
+  display: block;
 }
 
 .device-text {
@@ -436,6 +551,17 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  padding-top: 35px;
+}
+
+.footer-link {
+  padding-left: 124px;
+  padding-top: 137px;
+}
+
+.footer-menu-delivery {
+  list-style-type: none;
+  display: flex;
 }
 
 .footer-button-delivery {
@@ -448,6 +574,46 @@ html {
   text-transform: uppercase;
 }
 
+.footer-button-warranty {
+  color:#ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  padding-left: 35px;
+}
+
+.footer-button-credit {
+  color:#ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  padding-left: 35px;
+}
+
+.social-list {
+  padding-top: 62px;
+}
+
+.social-list-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-contacts {
+  width: 175px;
+  height: 116px;
+  padding-top: 140px;
+  padding-left: 183px;
+}
+
 .footer-contacts-phone {
   color: #ffffff;
   font-family: Rubik, sans-serif;
@@ -456,6 +622,14 @@ html {
   font-weight: 400;
   line-height: 20px;
   text-decoration-line: underline;
+  display: block;
+  padding-top: 13px;
+}
+
+.academy {
+  display: block;
+  padding-top: 63px;
+  padding-left: 61px;
 }
 
 /* catalog.html */
@@ -477,17 +651,20 @@ html {
   line-height: 30px;
 }
 
+/*Заголовок категории товаров*/
+
 .category-title {
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
+  display: block;
+  padding-left: 60px;
 }
-/*Заголовок категории товаров*/
 
 .breadcrumbs {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 60px;
   margin: 0;
   display: flex;
 }
@@ -513,7 +690,8 @@ html {
 }
 
 .filter {
-  width: 320px;
+  width: 260px;
+  padding-left: 60px;
 }
 
 .filter-text-title {
@@ -670,4 +848,15 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
