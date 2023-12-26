@@ -207,42 +207,42 @@ html {
 
 .category {
   display: grid;
-  grid-template-columns: 160px 160px 160px 160px 160px 160px;
+  grid-template-columns: repeat(6, 160px);
   gap: 40px;
   list-style-type: none;
+  padding-left: 0;
+}
+
+.category-item {
+  background-color: #ffe17f;
+  width: 160px;
+  height: 160px;
 }
 
 .category-item-vr {
   background-image: url("../images/virtual.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
 }
 .category-item-self {
   background-image: url("../images/monopod.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
 }
 .category-item-ecam {
   background-image: url("../images/action-camera.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
 }
 .category-item-fit {
   background-image: url("../images/fitness-bracelet.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
 }
 .category-item-watch {
   background-image: url("../images/watch.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
 }
 .category-item-copter {
   background-image: url("../images/quadrocopters.svg");
   background-repeat: no-repeat;
-  background-color: #FFE17F;
 }
-
 
 .category-link {
   font-size: 18px;
@@ -251,11 +251,12 @@ html {
   line-height: 24px;
   letter-spacing: -0.36px;
   display: flex;
-  padding-right: 40px;
   width: 160px;
   height: 253px;
   flex-direction: column-reverse;
+
 }
+
 /*Доставка*/
 .delivery {
   margin-top: 70px;
