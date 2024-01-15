@@ -257,6 +257,7 @@ html {
   background-repeat: no-repeat;
 }
 .category-link::before {
+  content: "";
   background-color: #ffe17f;
   height: 160px;
 }
@@ -342,9 +343,10 @@ html {
 
 .order-link {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+  text-decoration: none;
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -356,21 +358,26 @@ html {
 }
 
 .order-link::before {
+  content: "";
   width: 125px;
   height: 100px;
+  justify-content: flex-start;
   background-color: #ffe17f;
   background-image: url(../images/delivery-car.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .order-link::after {
+  content: "";
   display: flex;
   width: 125px;
   height: 100px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 10px;
   background-image: url(../images/information.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*Контакты*/
 .info {
