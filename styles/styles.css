@@ -206,35 +206,41 @@ html {
 }
 
 .category {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
   list-style-type: none;
+  padding-left: 0;
 }
-
-.category-item-vr {
+/*
+.category-item {
+  height: 253px;
+}
+*/
+.category-item-vr::before {
   background-image: url("../images/virtual.svg");
-  background-repeat: no-repeat;
-}
-.category-item-self {
-  background-image: url("../images/monopod.svg");
-  background-repeat: no-repeat;
-}
-.category-item-ecam {
-  background-image: url("../images/action-camera.svg");
-  background-repeat: no-repeat;
-}
-.category-item-fit {
-  background-image: url("../images/fitness-bracelet.svg");
-  background-repeat: no-repeat;
-}
-.category-item-watch {
-  background-image: url("../images/watch.svg");
-  background-repeat: no-repeat;
-}
-.category-item-copter {
-  background-image: url("../images/quadrocopters.svg");
-  background-repeat: no-repeat;
-}
 
+}
+.category-item-self::before {
+  background-image: url("../images/monopod.svg");
+
+}
+.category-item-ecam::before {
+  background-image: url("../images/action-camera.svg");
+
+}
+.category-item-fit::before {
+  background-image: url("../images/fitness-bracelet.svg");
+
+}
+.category-item-watch::before {
+  background-image: url("../images/watch.svg");
+
+}
+.category-item-copter::before {
+  background-image: url("../images/quadrocopters.svg");
+
+}
 
 .category-link {
   font-size: 18px;
@@ -242,11 +248,21 @@ html {
   font-weight: 800;
   line-height: 24px;
   letter-spacing: -0.36px;
-  display: block;
-  padding-right: 40px;
+  text-decoration: none;
+  display: flex;
   width: 160px;
-  height: 253px;
+  min-height: 253px;
+  padding-top: 32px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
 }
+.category-link::before {
+  content: "";
+  background-color: #ffe17f;
+  height: 160px;
+}
+
 /*Доставка*/
 .delivery {
   margin-top: 70px;
@@ -320,12 +336,18 @@ html {
 .order {
   margin-top: 70px;
   background-color: #f0f0f0;
+  display: flex;
+  width: 1160px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .order-link {
   display: flex;
-  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+  text-decoration: none;
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -337,22 +359,26 @@ html {
 }
 
 .order-link::before {
+  content: "";
   width: 125px;
   height: 100px;
+  justify-content: flex-start;
   background-color: #ffe17f;
   background-image: url(../images/delivery-car.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .order-link::after {
+  content: "";
   display: flex;
   width: 125px;
   height: 100px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   gap: 10px;
-  flex-shrink: 0;
   background-image: url(../images/information.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*Контакты*/
 .info {
