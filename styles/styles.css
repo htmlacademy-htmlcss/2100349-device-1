@@ -325,8 +325,10 @@ html {
 }
 
 .button-delivery {
+  width: 280px;
+  height: 40px;
   color: #ffe17f;
-  text-align: center;
+  text-align: start;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -335,6 +337,7 @@ html {
   text-transform: uppercase;
   display: block;
   margin-bottom: 35px;
+  background-color: #000;
 }
 
 .button-warranty {
@@ -347,6 +350,9 @@ html {
   text-transform: uppercase;
   display: block;
   margin-bottom: 35px;
+  background-color: #f0f0f0;
+  border: none;
+
 }
 
 .button-credit {
@@ -357,6 +363,15 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  background-color: #f0f0f0;
+  border: none;
+}
+
+.delivery-container-text {
+  display: flex;
+  width: 452px;
+  height: 174px;
+  padding-bottom: 73px;
 }
 
 .delivery-head-text {
@@ -373,6 +388,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  width: 452px;
+  height: 90px;
 }
 
 .order {
