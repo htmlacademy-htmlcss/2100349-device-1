@@ -53,7 +53,7 @@ html {
   padding-top: 30px;
 }
 
-.search-string {
+.search-string, .search-string-catalog {
   font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -106,6 +106,7 @@ html {
   font-weight: 400;
   line-height: 30px;
   text-decoration: none;
+  opacity: 0.3;
 
 }
 
