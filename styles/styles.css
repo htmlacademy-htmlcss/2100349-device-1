@@ -481,6 +481,8 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
 }
 
 .contacts-title {
@@ -579,6 +581,8 @@ html {
   font-weight: 800;
   line-height: 50px;
   display: block;
+  width: 348px;
+  height: 100px;
 }
 
 .subscription-text {
@@ -588,6 +592,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  width: 560px;
+  height: 90px;
 }
 
 .subscription-string {
@@ -597,6 +603,13 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  width: 557px;
+  height: 55px;
+  background-color: #f0f0f0;
+  border-bottom: 3px solid #c4c4c4;
+  border-left: none;
+  border-top: none;
+  border-right: none;
 }
 
 .subscription-button {
@@ -607,6 +620,10 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  padding: 18px 39px;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #c4c4c4;
 }
 
 /*footer*/
