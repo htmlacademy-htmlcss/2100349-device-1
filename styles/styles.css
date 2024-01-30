@@ -844,6 +844,7 @@ html {
 .catalog-sort {
   background-color: #f0f0f0;
   display: flex;
+  justify-content: space-between;
 }
 
 .sorting {
@@ -853,6 +854,7 @@ html {
   line-height: normal;
   letter-spacing: 3.2px;
   text-transform: uppercase;
+  padding-left: 20px;
 }
 
 .popular {
@@ -861,6 +863,26 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  background-color: #f0f0f0;
+  border: none;
+}
+
+.up-arrow {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.down-arrow {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Карточки товаров*/
