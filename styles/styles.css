@@ -748,15 +748,6 @@ html {
   line-height: 20px;
 }
 
-.account-exit {
-  color: #000000;
-  font-family: Rubik, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 30px;
-}
-
 /*Заголовок категории товаров*/
 
 .category-title {
@@ -771,8 +762,8 @@ html {
 .breadcrumbs {
   list-style-type: none;
   padding-left: 60px;
-  margin: 0;
   display: flex;
+  margin-bottom: 34px;
 }
 
 .breadcrumbs-link {
@@ -781,7 +772,16 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+  color: #000;
+  text-decoration: none;
 }
+
+.breadcrumbs-frame {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
 /*Меню Фильтр*/
 .main-catalog {
   background-color: #f0f0f0;
