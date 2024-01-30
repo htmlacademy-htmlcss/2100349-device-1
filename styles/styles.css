@@ -674,6 +674,7 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .footer-button-warranty {
@@ -685,6 +686,7 @@ html {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   padding-left: 35px;
+  text-decoration: none;
 }
 
 .footer-button-credit {
@@ -696,6 +698,7 @@ html {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   padding-left: 35px;
+  text-decoration: none;
 }
 
 .social-list {
