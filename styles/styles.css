@@ -53,17 +53,25 @@ html {
   padding-top: 30px;
 }
 
+.search-form {
+  display: flex;
+}
+
 .search-string, .search-string-catalog {
   font-family: Rubik, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  width: 359px;
-  height: 40px;
+  padding-left: 40px;
+  width: 319px;
   background-color: #ffe17f;
   border-radius: 50px 0 0 50px;
+  border-right: none;
   border: 2px solid #000;
+  background-image: url(../images/search-icons.svg);
+  background-repeat: no-repeat;
+  background-position: 16px center;
 }
 
 .search-button {
