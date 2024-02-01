@@ -99,11 +99,10 @@ html {
   text-decoration: none;
   color: #000;
   padding-left: 40px;
-  padding-top: 9px;
-}
-
-.account-icon {
-  padding-right: 10px;
+  padding-top: 6px;
+  background-image: url(../images/account-icons.svg);
+  background-repeat: no-repeat;
+  background-position: 15px center;
 }
 
 .account-exit {
@@ -115,7 +114,6 @@ html {
   line-height: 30px;
   text-decoration: none;
   opacity: 0.3;
-
 }
 
 .compare {
@@ -126,12 +124,12 @@ html {
   line-height: 30px;
   text-decoration: none;
   color: #000;
-  padding-left: 178px;
-  padding-top: 9px;
-}
-
-.compare-icon {
-  padding-right: 10px;
+  padding-left: 128px;
+  padding-top: 6px;
+  margin-left: 50px;
+  background-image: url(../images/icon-comparison-chart.svg);
+  background-repeat: no-repeat;
+  background-position: center 15px;
 }
 
 .basket {
@@ -142,8 +140,12 @@ html {
   line-height: 30px;
   text-decoration: none;
   color: #000;
-  padding-left: 30px;
-  padding-top: 9px;
+  padding-left: 15px;
+  padding-top: 6px;
+  margin-left: 30px;
+  background-image: url(../images/icons-basket.svg);
+  background-repeat: no-repeat;
+  background-position: left 13px;
 }
 
 .header-catalog {
@@ -161,6 +163,9 @@ html {
   margin-top: 45px;
   text-decoration: none;
   color: #000;
+  background-image: url(../images/catalog-icon.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .header-catalog-logo {
@@ -381,6 +386,9 @@ html {
   width: 452px;
   height: 174px;
   padding-bottom: 73px;
+  background-image: url(../images/courier.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .delivery-head-text {
@@ -793,11 +801,10 @@ html {
   line-height: 20px;
   color: #000;
   text-decoration: none;
-}
-
-.breadcrumbs-frame {
-  padding-left: 16px;
   padding-right: 16px;
+  background-image: url(../images/breadcrumbs-frame.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 
@@ -891,18 +898,18 @@ html {
   display: flex;
   width: 30px;
   height: 30px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-image: url(../images/sort-up.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .down-arrow {
   display: flex;
   width: 30px;
   height: 30px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-image: url(../images/sort-down.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 /*Карточки товаров*/
