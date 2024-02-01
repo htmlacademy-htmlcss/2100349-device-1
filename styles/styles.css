@@ -336,6 +336,8 @@ html {
 
 .menu-delivery {
   list-style-type: none;
+  border-right: 7px solid #000000;
+  padding-top: 64px;
 }
 
 .button-delivery {
@@ -364,9 +366,7 @@ html {
   text-transform: uppercase;
   display: block;
   margin-bottom: 35px;
-  background-color: #f0f0f0;
   border: none;
-
 }
 
 .button-credit {
@@ -377,8 +377,8 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  background-color: #f0f0f0;
   border: none;
+  padding-bottom: 65px;
 }
 
 .delivery-container-text {
