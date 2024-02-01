@@ -472,6 +472,10 @@ html {
   padding-bottom: 30px;
 }
 
+.delivery-services {
+  list-style-type: none;
+}
+
 .delivery-item {
   font-family: Rubik, sans-serif;
   font-size: 18px;
@@ -480,6 +484,13 @@ html {
   line-height: 20px;
   letter-spacing: -0.36px;
   padding-bottom: 19px;
+}
+
+.delivery-item::before {
+  content : "•";
+  color: #ffc700;
+  font-size: 22px;
+  padding-right: 10px;
 }
 
 .more-about-us {
