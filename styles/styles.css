@@ -490,8 +490,8 @@ html {
 }
 
 
-
 /*Выбор категории товаров*/
+
 .cards-category {
   margin-top: 70px;
 }
@@ -553,6 +553,20 @@ html {
   background-color: #ffe17f;
   height: 160px;
 }
+/*
+.category-link::before:hover {
+  background-color: #ffcc33;
+}
+*/
+.category-link:active {
+  opacity: 0.3;
+}
+
+.category-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 
 /*Доставка*/
 .delivery {
@@ -687,6 +701,25 @@ html {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.order-link:hover::before {
+  background-color: #ffcc33;
+}
+
+.order-link:hover::after {
+  opacity: 1;
+}
+
+.order-link:active {
+  opacity: 0.3;
+}
+
+.order-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+
 /*Контакты*/
 .info {
   margin-top: 70px;
