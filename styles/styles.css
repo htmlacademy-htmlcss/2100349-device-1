@@ -994,6 +994,26 @@ html {
   text-decoration: none;
 }
 
+.footer-button-delivery:hover,
+.footer-button-warranty:hover,
+.footer-button-credit:hover {
+  color: #ffcc33;
+  box-shadow: 0 2px #ffcc33;
+}
+
+.footer-button-delivery:active,
+.footer-button-warranty:active,
+.footer-button-credit:active {
+  opacity: 0.3;
+}
+
+.footer-button-delivery:focus,
+.footer-button-warranty:focus,
+.footer-button-credit:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .social-list {
   padding-top: 62px;
 }
@@ -1003,6 +1023,18 @@ html {
   display: flex;
   justify-content: center;
   gap: 15px;
+}
+
+.social-list-item:hover {
+  background-color: #ffcc33;
+}
+
+.social-list-item:active {
+  opacity: 0.3;
+}
+
+.social-list-item:focus {
+  outline: none;
 }
 
 .footer-contacts {
@@ -1024,11 +1056,40 @@ html {
   padding-top: 13px;
 }
 
+.footer-contacts-phone:hover {
+  color: #ffcc33;
+}
+
+.footer-contacts-phone:active {
+  color: #ffcc33;
+  opacity: 0.3;
+}
+
+.footer-contacts-phone:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .academy {
   display: block;
   padding-top: 63px;
   padding-left: 61px;
 }
+
+.logo-academy:hover {
+  color: #ffffff;
+}
+
+.logo-academy:active {
+  opacity: 0.3;
+}
+
+.logo-academy:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+
 
 /* catalog.html */
 /*Шапка сайта*/
