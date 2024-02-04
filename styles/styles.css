@@ -326,6 +326,33 @@ html {
   display: flex;
 }
 
+.slider-button {
+  width: 20px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: opacity 0.05s;
+  background-image: url(../images/slider-left-arrow.svg);
+}
+
+.slider-next {
+  transform: rotate(180deg);
+}
+
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:active {
+  opacity: 0.3;
+}
+
+.slider-button:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 .main-container {
   width: 1160px;
   margin: 0 auto;
@@ -367,6 +394,13 @@ html {
 .parameters {
   display: flex;
   padding-top: 50px;
+  width: 307px;
+  height: 72px;
+  gap: 20px;
+}
+
+.range, .radius {
+  height: 72px;
 }
 
 .numeric-parameter {
@@ -385,7 +419,78 @@ html {
   font-weight: 400;
   line-height: 30px;
   margin-left: 0;
+  padding-top: 12px;
 }
+
+.slider-pagination {
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 26px;
+}
+
+.slider-pagination-item {
+  line-height: 0;
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.buttons-indicators {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: opacity 0.05s;
+  cursor: pointer;
+}
+
+.buttons-indicators-current {
+  background-color: #000000;
+}
+
+.buttons-indicators::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid #af4fff;
+  transition: opacity 0.15s;
+}
+
+.buttons-indicators:hover {
+  opacity: 0.6;
+}
+
+.buttons-indicators:active {
+  opacity: 0.3;
+}
+
+.buttons-indicators:focus {
+  outline: none;
+}
+
+.buttons-indicators:focus::after {
+  display: block;
+}
+
+.buttons-indicators:disabled {
+  opacity: 0.1;
+}
+
+
+
 /*Выбор категории товаров*/
 .cards-category {
   margin-top: 70px;

@@ -42,9 +42,9 @@
       <div class="main-container">
         <div class="main-info">
           <h1 class="visually-hidden" hidden>Блок слайдер с кнопками прокрутки</h1>
-          <button class="left" type="button"></button>
+          <button class="slider-button slider-prev" type="button"></button>
           <img class="slider-picture" src="images/copter-slide-1.png" width="560" height="560" alt="фотография квадрокоптера.">
-          <button class="right" type="button"></button>
+          <button class="slider-button slider-next" type="button"></button>
           <div class="main-container slide-description">
             <h2 class="slider-text-head">Порхает как бабочка, жалит как пчела!</h2>
             <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
@@ -66,17 +66,19 @@
 
 
         <!--Отдельный div для кнопок-->
-        <div>
-          <button class="buttons-indicators" type="button">
-            <span class="visually-hidden">Первый слайд.</span>
-          </button>
-          <button class="buttons-indicators" type="button">
-            <span class="visually-hidden">Второй слайд.</span>
-          </button>
-          <button class="buttons-indicators" type="button">
-            <span class="visually-hidden">Третий слайд.</span>
-          </button>
-        </div>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="buttons-indicators buttons-indicators-current" type="button">
+              <span class="visually-hidden">Первый слайд.</span>
+            </button>
+            <button class="buttons-indicators" type="button">
+              <span class="visually-hidden">Второй слайд.</span>
+            </button>
+            <button class="buttons-indicators" type="button">
+              <span class="visually-hidden">Третий слайд.</span>
+            </button>
+          </li>
+        </ol>
       </div>
     </main>
 
@@ -132,7 +134,7 @@
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-          
+
         </div>
       </div>
     </section>
