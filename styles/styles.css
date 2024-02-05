@@ -352,7 +352,13 @@ html {
   background-image: linear-gradient(180deg,#ffe17f 125px,#fff 125px);
 }
 
+.slider-container {
+  width: 560px;
+  height: 560px;
+}
+
 .slider-button {
+  position: absolute;
   width: 20px;
   height: 60px;
   border: none;
@@ -360,6 +366,12 @@ html {
   cursor: pointer;
   transition: opacity 0.05s;
   background-image: url(../images/slider-left-arrow.svg);
+  background-repeat: no-repeat;
+  padding-top: 211px;
+}
+
+.slider-prev {
+  padding-top: 211px;
 }
 
 .slider-next {
