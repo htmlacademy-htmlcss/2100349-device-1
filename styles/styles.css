@@ -601,6 +601,7 @@ html {
   line-height: 24px;
   letter-spacing: -0.36px;
   text-decoration: none;
+  color: #000;
   display: flex;
   width: 160px;
   min-height: 253px;
@@ -645,19 +646,20 @@ html {
 }
 
 .button-delivery {
+  font-family: Raleway, sans-serif;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-align: center;
   width: 280px;
   height: 40px;
-  color: #ffe17f;
-  text-align: start;
+  color: #000;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
-  line-height: normal;
-  letter-spacing: 3.6px;
   text-transform: uppercase;
   display: block;
   margin-bottom: 35px;
-  background-color: #000;
+
 }
 
 .button-warranty::before {
@@ -669,30 +671,6 @@ html {
   z-index: -1;
 }
 
-.button-warranty {
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 35px;
-  border: none;
-}
-
-.button-credit {
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  border: none;
-  padding-bottom: 65px;
-}
 
 .delivery-container-text {
   display: flex;
@@ -747,6 +725,7 @@ html {
   text-transform: uppercase;
   width: 1160px;
   min-height: 100px;
+  color: #000000;
 }
 
 .order-link::before {
