@@ -185,6 +185,7 @@ html {
   line-height: 30px;
   text-decoration: none;
   opacity: 0.3;
+  padding-top: 6px;
 }
 
 .compare {
@@ -1170,6 +1171,19 @@ html {
   background-image: none;
 }
 
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
 
 /*Меню Фильтр*/
 .main-catalog {
@@ -1248,7 +1262,38 @@ html {
 }
 
 .select-control {
+  align-self: center;
+  margin-right: 206px;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  width: 200px;
+  background-color: transparent;
+  border: none;
+  padding-right: 30px;
+  appearance: none;
+  background-image: url(../images/select-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  direction: rtl;
+  transition: opacity .15s;
+}
 
+.select-control:disabled {
+  opacity: 0.1;
+}
+
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .popular {
@@ -1259,6 +1304,32 @@ html {
   line-height: 30px;
   background-color: #f0f0f0;
   border: none;
+}
+
+.sorter-button {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  width: 60px;
+  transition: opacity 0.15s;
+  padding-right: 40px;
+  padding-top: 10px;
+}
+
+.up-arrow:hover,
+.down-arrow:hover {
+  opacity: 0.5;
+}
+
+.up-arrow:active,
+.down-arrow:active {
+  opacity: 1;
+}
+
+.up-arrow:focus,
+.down-arrow:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 2px;
 }
 
 .up-arrow {
@@ -1337,6 +1408,21 @@ html {
   border: 3px solid #e5e5e5;
   margin-left: 44px;
 }
+
+.download-more:hover {
+  border-color: #000000;
+}
+
+.download-more:active {
+  opacity: 0.3;
+  background-color: #ffffff;
+}
+
+.download-more:disabled {
+  opacity: 0.3;
+}
+
+
 /*Кнопки Назад/Вперед*/
 .page-numbers {
   display: flex;
