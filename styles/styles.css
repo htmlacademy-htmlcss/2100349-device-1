@@ -1464,6 +1464,20 @@ html {
   opacity: 0.3;
 }
 
+.page-number-items:hover {
+  opacity: 1;
+}
+
+.page-number-items:active {
+  opacity: 0.1;
+}
+
+.page-number-items:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+  opacity: 1;
+}
+
 .back {
   color: #444444;
   font-family: Raleway, sans-serif;
@@ -1487,6 +1501,23 @@ html {
   padding: 25px;
   text-decoration: none;
   color: #000;
+}
+
+.back:hover,
+.forward:hover {
+  background-color: #dcdcdc;
+}
+
+.back:active,
+.forward:active {
+  background-color: #dcdcdc;
+  opacity: 0.3;
+}
+
+.back:focus,
+.forward:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 .visually-hidden {
