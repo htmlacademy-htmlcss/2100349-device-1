@@ -637,12 +637,16 @@ html {
 
 .delivery-container {
   display: flex;
+  width: 1160px;
+  height: 319px;
 }
 
 .menu-delivery {
   list-style-type: none;
   border-right: 7px solid #000000;
   padding-top: 64px;
+  width: 280px;
+  height: 319px;
 }
 
 .button-delivery {
@@ -650,7 +654,7 @@ html {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-align: center;
-  width: 280px;
+  width: 160px;
   height: 40px;
   color: #000;
   font-size: 18px;
@@ -659,16 +663,27 @@ html {
   text-transform: uppercase;
   display: block;
   margin-bottom: 35px;
-
+  border: none;
+  position: relative;
+  background-color: transparent;
 }
 
-.button-warranty::before {
+.button-delivery::before {
   background-image: url(../images/background-rectangle.svg);
   position: absolute;
   width: 160px;
   height: 8px;
   content: " ";
   z-index: -1;
+  top: 14px;
+}
+
+.button-delivery-current {
+  width: 280px;
+  background-image: none;
+  color: #ffe17f;
+  background-color: #000;
+  text-align: start;
 }
 
 
