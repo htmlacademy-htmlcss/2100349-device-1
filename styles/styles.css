@@ -355,6 +355,7 @@ html {
 .slider-container {
   width: 560px;
   height: 560px;
+  position: relative;
 }
 
 .slider-button {
@@ -367,11 +368,11 @@ html {
   transition: opacity 0.05s;
   background-image: url(../images/slider-left-arrow.svg);
   background-repeat: no-repeat;
-  padding-top: 211px;
+  top: 211px;
 }
 
 .slider-prev {
-  padding-top: 211px;
+  left: 30px;
 }
 
 .slider-next {
@@ -399,23 +400,24 @@ html {
 .slider-number {
   display: block;
   position: absolute;
-  font-family: Rubik;
+  font-family: Rubik, sans-serif;
   font-size: 180px;
   font-weight: 700;
   line-height: 30px;
   width: 250px;
   height: 135px;
-  top: 279px;
-  left: 915px;
-  right: 49px;
+  top: 59px;
+  right: 5px;
   bottom: 14px;
   color: #ffffff;
   text-align: right;
   margin-right: 50px;
+
 }
 
 .slide-description {
   margin-left: 40px;
+  position: relative;
 }
 
 .slider-text-head {
@@ -427,7 +429,8 @@ html {
   width: 545px;
   height: 100px;
   margin-top: 95px;
-  padding-left: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 .slider-text {
@@ -633,6 +636,9 @@ html {
 /*Доставка*/
 .delivery {
   margin-top: 70px;
+  background: linear-gradient(#ffffff 102px, #f0f0f0 102px);
+  padding-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .delivery-container {
@@ -646,14 +652,14 @@ html {
   border-right: 7px solid #000000;
   padding-top: 64px;
   width: 280px;
-  height: 319px;
+  height: 310px;
 }
 
 .button-delivery {
   font-family: Raleway, sans-serif;
   line-height: 21px;
   letter-spacing: 0.2em;
-  text-align: center;
+  text-align: left;
   width: 160px;
   height: 40px;
   color: #000;
@@ -930,6 +936,7 @@ html {
 .subscription {
   background-color: #f0f0f0;
   margin-top: 70px;
+  height: 421px;
 }
 
 .subscription-content,
@@ -937,6 +944,10 @@ html {
 .subscription-form {
   display: flex;
   flex-direction: row;
+}
+
+.subscription-content {
+  padding-top: 34px;
 }
 
 .subscription-title {
@@ -947,6 +958,7 @@ html {
   display: block;
   width: 348px;
   height: 100px;
+
 }
 
 .subscription-text {
@@ -966,15 +978,21 @@ html {
   width: 1158px;
   height: 57px;
   padding-bottom: 56px;
+  padding-top: 44px;
 }
 
 .free {
   display: flex;
   justify-content: end;
   padding-left: 188px;
+
   background-image: url(../images/green-check-mark.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom 64%;
+}
+
+.subscription-form {
+  padding-top: 30px;
 }
 
 .subscription-string {
@@ -1003,7 +1021,7 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  padding: 18px 39px;
+  padding: 16px 30px;
   justify-content: center;
   align-items: center;
   border: 3px solid #c4c4c4;
