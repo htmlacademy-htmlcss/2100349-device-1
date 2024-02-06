@@ -851,6 +851,17 @@ html {
   text-transform: uppercase;
   text-decoration: none;
   color: #000;
+  position: relative;
+}
+
+.more-about-us::before {
+  background-image: url(../images/background-rectangle.svg);
+  position: absolute;
+  width: 220px;
+  height: 8px;
+  content: " ";
+  z-index: -1;
+  top: 7px;
 }
 
 .contacts-title {
@@ -931,7 +942,20 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  position: relative;
 }
+
+.write-to-us::before {
+  background-image: url(../images/background-rectangle.svg);
+  position: absolute;
+  width: 190px;
+  height: 8px;
+  content: " ";
+  z-index: -1;
+  top: 6px;
+}
+
+
 /*Подписка*/
 .subscription {
   background-color: #f0f0f0;
@@ -985,7 +1009,6 @@ html {
   display: flex;
   justify-content: end;
   padding-left: 188px;
-
   background-image: url(../images/green-check-mark.svg);
   background-repeat: no-repeat;
   background-position: center bottom 64%;
