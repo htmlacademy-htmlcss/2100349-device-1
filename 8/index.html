@@ -41,15 +41,18 @@
     </header>
 
     <!--Слайдер-->
-    <main class="slider">
-      <div class="main-container">
+    <main class="main-container">
+      <div class="slider">
         <div class="main-info">
           <h1 class="visually-hidden" hidden>Блок слайдер с кнопками прокрутки</h1>
-          <button class="slider-button slider-prev" type="button"></button>
-          <img class="slider-picture" src="images/copter-slide-1.png" width="560" height="560"
-            alt="фотография квадрокоптера.">
-          <button class="slider-button slider-next" type="button"></button>
+          <div class="slider-container">
+            <button class="slider-button slider-prev" type="button"></button>
+            <img class="slider-picture" src="images/slider-copter.png" width="560" height="560"
+              alt="фотография квадрокоптера.">
+            <button class="slider-button slider-next" type="button"></button>
+          </div>
           <div class="main-container slide-description">
+            <span class="slider-number">01</span>
             <h2 class="slider-text-head">Порхает как бабочка, жалит как пчела!</h2>
             <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
               под стандартную камеру.</p>
@@ -124,13 +127,13 @@
         <div class="delivery-container">
           <ul class="menu-delivery">
             <li>
-              <button class="button-delivery" type="button">Доставка</button>
+              <button class="button-delivery button-delivery-current" type="button">Доставка</button>
             </li>
             <li>
-              <button class="button-warranty" type="button">Гарантия</button>
+              <button class="button-delivery" type="button">Гарантия</button>
             </li>
             <li>
-              <button class="button-credit" type="button">Кредит</button>
+              <button class="button-delivery" type="button">Кредит</button>
             </li>
           </ul>
           <div class="delivery-container-text">

@@ -37,8 +37,8 @@ html {
   /* index.html */
 /*Шапка сайта*/
 .main-header {
-  background-color: #ffe17f;
   padding-top: 15px;
+  background-image: linear-gradient(180deg,#fff 40px,#ffe17f 40px);
 }
 
 .logo-site {
@@ -67,6 +67,8 @@ html {
 
 .header-option {
   display: flex;
+  width: 1040px;
+  height: 40px;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 30px;
@@ -155,11 +157,12 @@ html {
   color: #000;
   width: 231px;
   height: 30px;
-  padding-left: 40px;
+  padding-left: 27px;
   padding-top: 6px;
+  margin-left: 26px;
   background-image: url(../images/account-icons.svg);
   background-repeat: no-repeat;
-  background-position: 15px center;
+  background-position: left bottom 40%;
   background-size: 15px 12px;
 }
 
@@ -196,12 +199,15 @@ html {
   line-height: 30px;
   text-decoration: none;
   color: #000;
+  width: 102px;
+  height: 26px;
   padding-top: 6px;
   margin-left: 50px;
   background-image: url(../images/icon-comparison-chart.svg);
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: left bottom 25%;
   background-size: 10px 12px;
+  padding-left: 22px;
 }
 
 .compare:hover {
@@ -225,7 +231,9 @@ html {
   line-height: 30px;
   text-decoration: none;
   color: #000;
-  padding-left: 15px;
+  width: 102px;
+  height: 26px;
+  padding-left: 5px;
   padding-top: 6px;
   margin-left: 30px;
   background-image: url(../images/icons-basket.svg);
@@ -244,6 +252,21 @@ html {
 .basket:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
+}
+
+.number {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  text-align: center;
+  width: 21px;
+  height: 21px;
+  left: -18px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  padding: 0 6px;
 }
 
 .header-catalog {
@@ -323,11 +346,19 @@ html {
 
 
 /*Слайдер*/
+
 .main-info {
   display: flex;
+  background-image: linear-gradient(180deg,#ffe17f 125px,#fff 125px);
+}
+
+.slider-container {
+  width: 560px;
+  height: 560px;
 }
 
 .slider-button {
+  position: absolute;
   width: 20px;
   height: 60px;
   border: none;
@@ -335,6 +366,12 @@ html {
   cursor: pointer;
   transition: opacity 0.05s;
   background-image: url(../images/slider-left-arrow.svg);
+  background-repeat: no-repeat;
+  padding-top: 211px;
+}
+
+.slider-prev {
+  padding-top: 211px;
 }
 
 .slider-next {
@@ -359,15 +396,38 @@ html {
   margin: 0 auto;
 }
 
+.slider-number {
+  display: block;
+  position: absolute;
+  font-family: Rubik;
+  font-size: 180px;
+  font-weight: 700;
+  line-height: 30px;
+  width: 250px;
+  height: 135px;
+  top: 279px;
+  left: 915px;
+  right: 49px;
+  bottom: 14px;
+  color: #ffffff;
+  text-align: right;
+  margin-right: 50px;
+}
+
 .slide-description {
   margin-left: 40px;
 }
 
 .slider-text-head {
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 800;
   line-height: 50px;
+  width: 545px;
+  height: 100px;
+  margin-top: 95px;
+  padding-left: 15px;
 }
 
 .slider-text {
@@ -541,6 +601,7 @@ html {
   line-height: 24px;
   letter-spacing: -0.36px;
   text-decoration: none;
+  color: #000;
   display: flex;
   width: 160px;
   min-height: 253px;
@@ -576,70 +637,65 @@ html {
 
 .delivery-container {
   display: flex;
+  width: 1160px;
+  height: 319px;
 }
 
 .menu-delivery {
   list-style-type: none;
   border-right: 7px solid #000000;
   padding-top: 64px;
+  width: 280px;
+  height: 319px;
 }
 
 .button-delivery {
-  width: 280px;
+  font-family: Raleway, sans-serif;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  width: 160px;
   height: 40px;
-  color: #ffe17f;
-  text-align: start;
+  color: #000;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
-  line-height: normal;
-  letter-spacing: 3.6px;
   text-transform: uppercase;
   display: block;
   margin-bottom: 35px;
-  background-color: #000;
+  border: none;
+  position: relative;
+  background-color: transparent;
 }
 
-.button-warranty::before {
+.button-delivery::before {
   background-image: url(../images/background-rectangle.svg);
   position: absolute;
   width: 160px;
   height: 8px;
   content: " ";
   z-index: -1;
+  top: 14px;
 }
 
-.button-warranty {
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 35px;
-  border: none;
+.button-delivery-current {
+  width: 280px;
+  background-image: none;
+  color: #ffe17f;
+  background-color: #000;
+  text-align: start;
 }
 
-.button-credit {
-  text-align: center;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-  border: none;
-  padding-bottom: 65px;
-}
 
 .delivery-container-text {
   display: flex;
   flex-grow: 1;
+  width: 452px;
   height: 174px;
   flex-direction: column;
   margin-left: 116px;
+  margin-top: 53px;
+  margin-right: 63px;
   padding-bottom: 73px;
   background-image: url(../images/courier.svg);
   background-repeat: no-repeat;
@@ -647,9 +703,12 @@ html {
 }
 
 .delivery-head-text {
+  width: 242px;
+  height: 50px;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
   font-size: 50px;
   font-style: normal;
-  font-weight: 800;
   line-height: 50px;
 }
 
@@ -687,6 +746,7 @@ html {
   text-transform: uppercase;
   width: 1160px;
   min-height: 100px;
+  color: #000000;
 }
 
 .order-link::before {
