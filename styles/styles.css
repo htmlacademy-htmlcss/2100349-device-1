@@ -639,6 +639,7 @@ html {
   background: linear-gradient(#ffffff 102px, #f0f0f0 102px);
   padding-bottom: 70px;
   margin-bottom: 70px;
+  z-index: 1;
 }
 
 .delivery-container {
@@ -667,7 +668,7 @@ html {
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
-  display: block;
+  padding-left: 10px;
   margin-bottom: 35px;
   border: none;
   position: relative;
@@ -676,13 +677,15 @@ html {
 
 .button-delivery::before {
   background-image: url(../images/background-rectangle.svg);
+  background-position: left;
   position: absolute;
-  width: 160px;
+  width: 120px;
   height: 8px;
   content: " ";
-  z-index: -1;
+  z-index: -2;
   top: 14px;
 }
+
 
 .button-delivery-current {
   width: 280px;
