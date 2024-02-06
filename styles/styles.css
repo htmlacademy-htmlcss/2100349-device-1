@@ -690,9 +690,12 @@ html {
 .delivery-container-text {
   display: flex;
   flex-grow: 1;
+  width: 452px;
   height: 174px;
   flex-direction: column;
   margin-left: 116px;
+  margin-top: 53px;
+  margin-right: 63px;
   padding-bottom: 73px;
   background-image: url(../images/courier.svg);
   background-repeat: no-repeat;
@@ -700,9 +703,12 @@ html {
 }
 
 .delivery-head-text {
+  width: 242px;
+  height: 50px;
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
   font-size: 50px;
   font-style: normal;
-  font-weight: 800;
   line-height: 50px;
 }
 
