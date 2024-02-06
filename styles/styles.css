@@ -1353,6 +1353,7 @@ html {
   background-color: #f0f0f0;
   display: flex;
   justify-content: space-between;
+  height: 70px;
 }
 
 .sorting {
@@ -1363,6 +1364,7 @@ html {
   letter-spacing: 3.2px;
   text-transform: uppercase;
   padding-left: 20px;
+  padding-top: 13px;
 }
 
 .select-control {
@@ -1417,7 +1419,7 @@ html {
   width: 60px;
   transition: opacity 0.15s;
   padding-right: 40px;
-  padding-top: 10px;
+  padding-top: 18px;
 }
 
 .up-arrow:hover,
