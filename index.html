@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
+
   <body>
     <!-- Шапка сайта -->
     <header class="main-container main-header">
@@ -38,16 +40,21 @@
     </header>
 
     <!--Слайдер-->
-    <main class="slider">
-      <div class="main-container">
+    <main class="main-container">
+      <div class="slider">
         <div class="main-info">
           <h1 class="visually-hidden" hidden>Блок слайдер с кнопками прокрутки</h1>
-          <button class="left" type="button"></button>
-          <img class="slider-picture" src="images/copter-slide-1.png" width="560" height="560" alt="фотография квадрокоптера.">
-          <button class="right" type="button"></button>
-          <div class="main-container slide-description">
+          <div class="slider-container">
+            <button class="slider-button slider-prev" type="button"></button>
+            <img class="slider-picture" src="images/slider-copter.png" width="560" height="560"
+              alt="фотография квадрокоптера.">
+            <button class="slider-button slider-next" type="button"></button>
+          </div>
+          <div class="slide-description">
+            <span class="slider-number">01</span>
             <h2 class="slider-text-head">Порхает как бабочка, жалит как пчела!</h2>
-            <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным
+              под стандартную камеру.</p>
 
             <a class="more-detailed-link">Подробнее</a>
 
@@ -66,17 +73,19 @@
 
 
         <!--Отдельный div для кнопок-->
-        <div>
-          <button class="buttons-indicators" type="button">
-            <span class="visually-hidden">Первый слайд.</span>
-          </button>
-          <button class="buttons-indicators" type="button">
-            <span class="visually-hidden">Второй слайд.</span>
-          </button>
-          <button class="buttons-indicators" type="button">
-            <span class="visually-hidden">Третий слайд.</span>
-          </button>
-        </div>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="buttons-indicators buttons-indicators-current" type="button">
+              <span class="visually-hidden">Первый слайд.</span>
+            </button>
+            <button class="buttons-indicators" type="button">
+              <span class="visually-hidden">Второй слайд.</span>
+            </button>
+            <button class="buttons-indicators" type="button">
+              <span class="visually-hidden">Третий слайд.</span>
+            </button>
+          </li>
+        </ol>
       </div>
     </main>
 
@@ -117,13 +126,13 @@
         <div class="delivery-container">
           <ul class="menu-delivery">
             <li>
-              <button class="button-delivery" type="button">Доставка</button>
+              <button class="button-delivery button-delivery-current" type="button">Доставка</button>
             </li>
             <li>
-              <button class="button-warranty" type="button">Гарантия</button>
+              <button class="button-delivery" type="button">Гарантия</button>
             </li>
             <li>
-              <button class="button-credit" type="button">Кредит</button>
+              <button class="button-delivery" type="button">Кредит</button>
             </li>
           </ul>
           <div class="delivery-container-text">
@@ -132,6 +141,7 @@
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
+
         </div>
       </div>
     </section>
@@ -184,13 +194,13 @@
           <p class="subscription-text">Еженедельный дайджест с обзорами новинок,
             длительными тест-драйвами, распаковками, а также акции,
             спецпредложения и вот это вот всё.</p>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru">
-              <input class="subscription-string" type="email" placeholder="Ваш e-mail" required>
-              <button class="subscription-button" type="submit">подписаться</button>
-            </form>
         </div>
-        <div class="free">
-          <p class="subscription-text">Это бесплатно</p>
+        <div class="subscribe-form">
+          <form class="subscription-form" action="https://echo.htmlacademy.ru">
+            <input class="subscription-string" type="email" placeholder="Ваш e-mail" required>
+            <button class="subscription-button" type="submit">подписаться</button>
+          </form>
+          <p class="subscription-text free">Это бесплатно</p>
         </div>
       </div>
     </section>
@@ -200,7 +210,7 @@
       <div class="footer-content main-container">
         <div class="device">
           <a class="logo-site-footer" href="index.html">
-            <img class="footer-logo" src="images/yellow-logo-site.svg" alt="логотип сайта." >
+            <img class="footer-logo" src="images/yellow-logo-site.svg" alt="логотип сайта.">
           </a>
           <p class="device-text">Санкт-Петербург, набережная
             реки Карповки, 5, литера П.</p>
@@ -221,17 +231,20 @@
             <ul class="social-list-links">
               <li class="social-list-item">
                 <a href="https://telegram.org/">
-                  <img class="logo-telegramm" src="images/telegram-logo.svg" width="40" height="40" alt="логотип социальной сети телеграмм.">
+                  <img class="logo-telegramm" src="images/telegram-logo.svg" width="40" height="40"
+                    alt="логотип социальной сети телеграмм.">
                 </a>
               </li>
               <li class="social-list-item">
                 <a href="youtube.com">
-                  <img class="logo-youtube" src="images/youtube-logo.svg" width="40" height="40" alt="логотип социальной сети ютуб.">
+                  <img class="logo-youtube" src="images/youtube-logo.svg" width="40" height="40"
+                    alt="логотип социальной сети ютуб.">
                 </a>
               </li>
               <li class="social-list-item">
                 <a href="http://x.com/">
-                  <img class="logo-x" src="images/twitter-logo.svg" width="40" height="40" alt="логотип социальнойсети твиттер.">
+                  <img class="logo-x" src="images/twitter-logo.svg" width="40" height="40"
+                    alt="логотип социальнойсети твиттер.">
                 </a>
               </li>
             </ul>
@@ -240,11 +253,13 @@
         <div class="footer-contacts">
           <a class="footer-contacts-phone" href="tel:+7(812)812-12-12">Тел.: +7 (812) 812-12-12</a>
           <a class="academy" href="https://htmlacademy.ru">
-            <img class="logo-academy" src="images/logo-academy.svg" width="115" height="33" alt="логотип сайта htmlacademy.">
+            <img class="logo-academy" src="images/logo-academy.svg" width="115" height="33"
+              alt="логотип сайта htmlacademy.">
           </a>
         </div>
       </div>
-    </div>
+      </div>
     </footer>
   </body>
+
 </html>
