@@ -313,6 +313,54 @@
       </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-rare-item-order">
+        <div class="modal-header">
+          <h2 class="modal-title">Доставка под заказ</h2>
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть.</span>
+          </button>
+        </div>
+        <form class="rare-item-order-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="field-group">
+              <label class="field-title" for="name">Ваше имя:</label>
+              <input class="rare-item-order-field name-field" type="text" name="rare-item-order-name" id="name" placeholder="Введите имя" autocomplete="on">
+              <span class="field-note">Введите имя</span>
+            </div>
+            <div class="field-group">
+              <label class="field-title" for="email">Ваш e-mail:</label>
+              <input class="rare-item-order-field email-field" type="email" name="rare-item-order-email" id="email" placeholder="Введите e-mail" autocomplete="on" required>
+              <span class="field-note field-error">Забавный у вас адрес</span>
+            </div>
+            <div class="field-group">
+              <label class="field-title" for="description">Что нужно привезти:</label>
+              <input class="rare-item-order-field description-field" type="text" name="rare-item-order-description" id="description" placeholder="В свободной форме" required>
+            </div>
+            <div class="field-group">
+              <span class="field-title field-title-icon">
+                <label class="field-title" for="quantity">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-quantity"></button>
+                </span>
+                <span id="tooltip-label-quantity" class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                  к провозу багажа.</span>
+              </span>
+              <div class="quantity-wrapper">
+                <button class="field-button button-minus" type="button">
+                  <span class="visually-hidden">Меньше.</span>
+                </button>
+                <input class="rare-item-order-field quantity-field" type="text" name="rare-item-order-quantity" id="quantity" value="1">
+                <button class="field-button button-plus" type="button">
+                  <span class="visually-hidden">Больше.</span>
+                </button>
+              </div>
+            </div>
+            <button class="modal-button" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+
   </body>
 
 </html>
