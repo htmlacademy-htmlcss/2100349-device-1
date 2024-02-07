@@ -269,6 +269,167 @@ html {
   padding: 0 6px;
 }
 
+/* popover */
+
+.popover {
+  /*display: none;*/
+  position: absolute;
+  top: 130px;
+  height: 307px;
+  width: 320px;
+  background-color: #000000;
+  color: #ffffff;
+  z-index: 3;
+  margin-left: 800px;
+}
+
+.popover::before {
+  position: absolute;
+  content: " ";
+  background-image: url("../images/black-triangle.svg");
+  width: 14px;
+  height: 6px;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popover-content {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cart-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  position: relative;
+  display: flex;
+  padding: 20px;
+}
+
+.cart-item:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cart-item-link {
+  display: flex;
+  cursor: pointer;
+  margin-right: auto;
+  transition: opacity 0.15s;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.cart-item-image {
+  align-self: center;
+  margin-right: 23px;
+}
+
+.cart-item-title {
+  width: min-content;
+  margin: 0;
+}
+
+.cart-button-close {
+  padding: 0;
+  height: 10px;
+  width: 10px;
+  background-color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-button-close::before,
+.cart-button-close::after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  width: 10px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.cart-button-close::before {
+  transform: rotate(45deg);
+}
+
+.cart-button-close::after {
+  transform: rotate(-45deg);
+}
+
+
+.cart-item-link:hover,
+.cart-button-close:hover {
+  opacity: 0.6;
+}
+
+.cart-item-link:active,
+.cart-button-close:active {
+  opacity: 0.3;
+}
+
+.cart-item-link:focus,
+.cart-button-close:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+.cart-specs {
+  display: flex;
+  padding: 0 20px;
+  background-color: #1a1a1a;
+  justify-content: space-between;
+}
+
+.cart-specs p {
+  margin: 0;
+  padding: 12px 0;
+}
+
+.cart-item-button {
+  display: block;
+  margin: 20px;
+  padding: 14.5px 25px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  letter-spacing: 3.6px;
+  line-height: normal;
+  text-transform: uppercase;
+  flex-grow: 1;
+  text-indent: -3.6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cart-item-button:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.cart-item-button:hover {
+  background-color: #ffe17f;
+}
+
+.cart-item-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.cart-item-button:focus {
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
+}
+
+
+
+
+
 .header-catalog {
   display: flex;
   padding-left: 60px;
