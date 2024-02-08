@@ -569,6 +569,18 @@ html {
   position: relative;
 }
 
+.copter-slider {
+  display: ;
+}
+
+.braselet-slider {
+  display: none;
+}
+
+.selfy-slider {
+  display: none;
+}
+
 .slider-button {
   position: absolute;
   width: 20px;
@@ -652,7 +664,7 @@ html {
   font-weight: 400;
   line-height: 30px;
   display: block;
-  padding-top: 29px;
+  padding-top: 19px;
 }
 
 .more-detailed-link {
@@ -665,11 +677,24 @@ html {
   text-transform: uppercase;
   display: block;
   padding-top: 50px;
+  position: relative;
 }
+
+.more-detailed-link::before {
+  background-image: url(../images/background-rectangle.svg);
+  background-position: left;
+  position: absolute;
+  width: 140px;
+  height: 8px;
+  content: " ";
+  z-index: -1;
+  top: 55px;
+}
+
 .parameters {
   display: flex;
   padding-top: 50px;
-  width: 307px;
+  min-width: 307px;
   height: 72px;
   gap: 20px;
 }
