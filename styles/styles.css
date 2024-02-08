@@ -568,10 +568,10 @@ html {
   height: 560px;
   position: relative;
 }
-
+/*
 .copter-slider {
-  display: ;
-}
+  display: none;
+}*/
 
 .braselet-slider {
   display: none;
@@ -932,17 +932,49 @@ html {
 }
 
 
-.delivery-container-text {
+.advantages-delivery {
   display: flex;
   flex-grow: 1;
-  width: 452px;
+  width: 694px;
   height: 174px;
   flex-direction: column;
-  margin-left: 116px;
-  margin-top: 53px;
-  margin-right: 63px;
+  margin-left: 86px;
+  margin-top: 25px;
+  margin-right: 23px;
   padding-bottom: 73px;
   background-image: url(../images/courier.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.advantages-warranty {
+  display: none;
+  /*display: flex;*/
+  flex-grow: 1;
+  width: 694px;
+  height: 174px;
+  flex-direction: column;
+  margin-left: 86px;
+  margin-top: 25px;
+  margin-right: 23px;
+  padding-bottom: 73px;
+  background-image: url(../images/warranty.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.advantages-credit {
+  display: none;
+  /*display: flex;*/
+  flex-grow: 1;
+  width: 694px;
+  height: 174px;
+  flex-direction: column;
+  margin-left: 86px;
+  margin-top: 25px;
+  margin-right: 23px;
+  padding-bottom: 73px;
+  background-image: url(../images/credit.svg);
   background-repeat: no-repeat;
   background-position: right;
 }
