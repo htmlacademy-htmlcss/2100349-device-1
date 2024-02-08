@@ -1879,7 +1879,7 @@ html {
 }
 
 
-/*Меню Фильтр*/
+
 .main-catalog {
   background-color: #f0f0f0;
 }
@@ -1892,7 +1892,9 @@ html {
   display: flex;
 }
 
-.filter {
+/*Меню Фильтр*/
+
+.filter-wrapper {
   width: 260px;
   padding-left: 60px;
 }
@@ -1904,25 +1906,216 @@ html {
   line-height: normal;
   letter-spacing: 3.2px;
   text-transform: uppercase;
+  margin-bottom: 33px;
 }
 
-.cost-scale-text {
-  font-family: Rubik, sans-serif;
-  font-size: 18px;
-  font-style: normal;
+.filter-title {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-top: 12px;
+  border-top: 2px solid #000000;
 }
 
-.filter-text {
-  font-family: Rubik, sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: -0.36px;
+.filter {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 33px;
 }
+
+.filter-price {
+  margin-bottom: 65px;
+}
+
+.filter:last-of-type {
+  margin-bottom: 35px;
+}
+
+.filter-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 20px;
+}
+
+.filter-price .filter-title {
+  margin-bottom: 28px;
+}
+
+.range-scale {
+  position: relative;
+  height: 2px;
+  background-color: #dcdcdc;
+}
+
+.range-bar {
+  position: absolute;
+  height: 2px;
+  background-color: #000000;
+}
+
+.toggle-min {
+  position: absolute;
+  top: -9px;
+  left: -9px;
+}
+
+.toggle-max {
+  position: absolute;
+  top: -9px;
+  right: 9px;
+}
+
+.range-toggle {
+  position: absolute;
+  box-sizing: border-box;
+  width: 18px;
+  height: 18px;
+  background-color: #ebebeb;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-toggle::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border: 2px solid #af4fff;
+  transition: all 0.15s;
+}
+
+.range-toggle:hover {
+  opacity: 0.5;
+}
+
+.range-toggle:active {
+  background-color: #000000;
+}
+
+.range-toggle:focus::after {
+  display: block;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label {
+  position: absolute;
+  display: flex;
+  margin-top: 18px;
+  margin-left: -4px;
+  font-size: 14px;
+  opacity: 0.3;
+  transform: translateX(-25%);
+}
+
+.label-min {
+  margin-left: 11px;
+}
+
+.range-input {
+  width: 34px;
+  padding: 0 2px;
+  appearance: textfield;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+}
+
+.filter-group .filter-item:not(:last-child) {
+  margin-bottom: 17px;
+}
+
+.filter-bluetooth .filter-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #000000;
+  left: 0;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.control-mark::after {
+  display: none;
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 2px solid #af4fff;
+  transition: all 0.15s;
+}
+
+.control-input:disabled ~ span {
+  opacity: 0.1;
+}
+
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.control:active .control-mark {
+  opacity: 0.3;
+}
+
+.control:focus-within {
+  outline: none;
+}
+
+.control:focus-within .control-mark::after {
+  display: block;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/tick-filter.svg");
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  border-radius: 50%;
+  content: "";
+}
+
 
 .show-button {
   text-align: center;
@@ -1933,7 +2126,19 @@ html {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   border: none;
+  position: relative;
 }
+
+.show-button::before {
+  background-image: url(../images/background-rectangle.svg);
+  position: absolute;
+  width: 140px;
+  height: 8px;
+  content: " ";
+  z-index: -1;
+  top: 16px;
+}
+
 /*Меню Сортировка*/
 .catalog {
   width: 840px;
