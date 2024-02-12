@@ -12,6 +12,7 @@
         <img class="logo" src="images/logo-site.svg" width="145" height="36" alt="Логотип сайта DEVICE.">
       </a>
       <div class="header-option">
+        <span class="visually-hidden">Поиск по сайту</span>
         <form class="search-form" action="https://echo.htmlacademy.ru">
           <input class="search-string-catalog" type="text" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
@@ -26,11 +27,11 @@
 
         </ul>
         <a href="#" class="compare">Сравнить</a>
-
+        <span class="visually-hidden">Сравнить</span>
         <a href="#" class="basket"><span class="number">2</span>Корзина</a>
+        <span class="visually-hidden">Корзина</span>
         <div class="popover popover-cart">
           <div class="popover-content">
-            <h2 class="visually-hidden">Корзина</h2>
             <ul class="cart-list">
               <li class="cart-item">
                 <a class="cart-item-link" href="#">
@@ -62,7 +63,7 @@
       <div class="header-catalog">
         <div class="navigation-catalog">
           <a class="header-catalog-link" href="#">Каталог товаров</a>
-
+          <span class="visually-hidden">Каталог товаров</span>
           <ul class="navigation-list catalog">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Виртуальная реальность</a>
@@ -87,17 +88,20 @@
         <ul class="header-menu">
           <li class="header-menu-item">
             <a class="header-menu-link" href="#">Доставка</a>
+            <span class="visually-hidden">Доставка</span>
           <li class="header-menu-item">
             <a class="header-menu-link" href="#">Гарантия</a>
+            <span class="visually-hidden">Гарантия</span>
           <li class="header-menu-item">
             <a class="header-menu-link" href="#">Контакты</a>
+            <span class="visually-hidden">Контакты</span>
         </ul>
       </div>
     </header>
 
     <!--Заголовок категории товаров-->
     <section class="main-container">
-      <h1 class="visually-hidden" hidden>Страница с карточками товаров</h1>
+      <h1 class="visually-hidden" hidden>Страница с каталогом моноподов для селфи</h1>
       <h2 class="category-title">Моноподы для селфи</h2>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
@@ -116,6 +120,7 @@
     <main class="main-catalog">
       <div class="main-container catalog-container">
         <div class="filter-wrapper">
+          <span class="visually-hidden">Фильтр поиска</span>
           <h2 class="filter-text-title">Фильтр:</h2>
           <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter filter-price">
@@ -143,12 +148,14 @@
             </fieldset>
             <fieldset class="filter filter-group">
               <legend class="filter-title">Цвет</legend>
+              <span class="visually-hidden">Выбор цвета</span>
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
                     <input class="visually-hidden control-input" type="checkbox" name="black" checked>
                     <span class="control-mark"></span>
                     <span>Черный</span>
+                    <span class="visually-hidden">Черный</span>
                   </label>
                 </li>
                 <li class="filter-item">
@@ -156,6 +163,7 @@
                     <input class="visually-hidden control-input" type="checkbox" name="white" checked>
                     <span class="control-mark"></span>
                     <span>Белый</span>
+                    <span class="visually-hidden">Белый</span>
                   </label>
                 </li>
                 <li class="filter-item">
@@ -163,6 +171,7 @@
                     <input class="visually-hidden control-input" type="checkbox" name="blue">
                     <span class="control-mark"></span>
                     <span>Синий</span>
+                    <span class="visually-hidden">Синий</span>
                   </label>
                 </li>
                 <li class="filter-item">
@@ -170,6 +179,7 @@
                     <input class="visually-hidden control-input" type="checkbox" name="red">
                     <span class="control-mark"></span>
                     <span>Красный</span>
+                    <span class="visually-hidden">Красный</span>
                   </label>
                 </li>
                 <li class="filter-item">
@@ -177,12 +187,14 @@
                     <input class="visually-hidden control-input" type="checkbox" name="pink">
                     <span class="control-mark"></span>
                     <span>Розовый</span>
+                    <span class="visually-hidden">Розовый</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter filter-bluetooth">
               <legend class="filter-title">Bluetooth</legend>
+              <span class="visually-hidden">Блютуз</span>
               <ul class="filter-list">
                 <li class="filter-item">
                   <label class="control">
@@ -201,6 +213,7 @@
               </ul>
             </fieldset>
             <button class="show-button" type="submit">Показать</button>
+            <span class="visually-hidden">Кнопка показать</span>
           </form>
         </div>
 
@@ -208,7 +221,7 @@
         <div class="catalog-cards">
           <div class="catalog-sort">
             <h2 class="sorting">Сортировка:</h2>
-
+            <span class="visually-hidden">меню сортировка</span>
             <select class="select-control" aria-label="Сортировка">
               <option value="popular">Популярные</option>
               <option value="cheap">Сначала дешёвые</option>
@@ -267,11 +280,14 @@
             </ul>
 
             <button class="download-more" type="button">Загрузить ещё</button>
+            <span class="visually-hidden">Кнопка загрузить ещё</span>
 
             <!--Кнопки Назад/Вперед-->
             <div class="page-numbers">
               <a href="#" class="back">Назад</a>
+              <span class="visually-hidden">Кнопка назад</span>
               <ul class="page-numbers-list">
+                <span class="visually-hidden">Выбор номера страницы</span>
                 <li>
                   <a href="#" class="page-number-items">1</a>
                 </li>
@@ -289,6 +305,7 @@
                 </li>
               </ul>
               <a href="#" class="forward">Вперёд</a>
+              <span class="visually-hidden">Кнопка вперед</span>
             </div>
 
           </div>
@@ -308,21 +325,26 @@
           </a>
           <p class="device-text">Санкт-Петербург, набережная
             реки Карповки, 5, литера П.</p>
+            <span class="visually-hidden">Адрес магазина</span>
         </div>
         <div class="footer-link">
           <ul class="footer-menu-delivery">
             <li>
               <a class="footer-button-delivery" href="#">Доставка</a>
+              <span class="visually-hidden">Доставка</span>
             </li>
             <li>
               <a class="footer-button-warranty" href="#">Гарантия</a>
+              <span class="visually-hidden">Гарантия</span>
             </li>
             <li>
               <a class="footer-button-credit" href="#">Кредит</a>
+              <span class="visually-hidden">Кредит</span>
             </li>
           </ul>
           <div class="social-list">
             <ul class="social-list-links">
+              <span class="visually-hidden">Ссылки на страницы в социальный сетях</span>
               <li class="social-list-item">
                 <a href="https://telegram.org/">
                   <img class="logo-telegramm" src="images/telegram-logo.svg" width="40" height="40" alt="логотип социальной сети телеграмм.">
