@@ -16,14 +16,47 @@
           <input class="search-string-catalog" type="text" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
+        <ul class="account">
+          <li>
+            <a href="#" class="account-name">Коля Петухов</a>
+          </li>
+          <li>
+            <a href="#" class="account-exit">Выйти</a>
+          </li>
 
-        <a href="#" class="account">Коля Петухов</a>
-
-        <a href="#" class="account-exit">Выйти</a>
-
+        </ul>
         <a href="#" class="compare">Сравнить</a>
 
         <a href="#" class="basket"><span class="number">2</span>Корзина</a>
+        <div class="popover popover-cart">
+          <div class="popover-content">
+            <h2 class="visually-hidden">Корзина</h2>
+            <ul class="cart-list">
+              <li class="cart-item">
+                <a class="cart-item-link" href="#">
+                  <img class="cart-item-image" src="images/monopod-small.png" width="39" height="43" alt="">
+                  <p class="cart-item-title">Любительская селфи-палка</p>
+                </a>
+                <button class="cart-button-close" type="button">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+              <li class="cart-item">
+                <a class="cart-item-link" href="#">
+                  <img class="cart-item-image" src="images/prof-monopod-small.png" width="39" height="43" alt="">
+                  <p class="cart-item-title">Профессиональная селфи-палка</p>
+                </a>
+                <button class="cart-button-close" type="button">
+                  <span class="visually-hidden">Удалить из корзины</span>
+                </button>
+              </li>
+            </ul>
+            <div class="cart-specs">
+              <p class="cart-items-count">Товаров: 2</p>
+              <p class="cart-items-price">Сумма: 2000 ₽</p>
+            </div>
+            <a class="cart-item-button" href="#">Открыть корзину</a>
+          </div>
       </div>
       <div class="header-catalog">
         <a class="header-catalog-link" href="#">Каталог товаров</a>
