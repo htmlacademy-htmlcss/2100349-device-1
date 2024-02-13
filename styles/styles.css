@@ -52,15 +52,15 @@ html {
   transition: opacity 0.15s;
 }
 
-.logo:hover {
+.logo:hover, .footer-logo:hover {
   opacity: 0.6;
 }
 
-.logo:active {
+.logo:active, .footer-logo:active {
   opacity: 0.3;
 }
 
-.logo:focus {
+.logo:focus, .footer-logo:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -1428,6 +1428,10 @@ html {
   padding-top: 35px;
 }
 
+.yellow-line {
+  padding-top: 64px;
+}
+
 .footer-link {
   padding-left: 124px;
   padding-top: 137px;
@@ -1584,11 +1588,11 @@ html {
 }
 
 .logo-academy:hover {
-  color: #ffffff;
+  opacity: 0.3;
 }
 
 .logo-academy:active {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .logo-academy:focus {
@@ -1809,7 +1813,7 @@ html {
 .tooltip-text::before {
   position: absolute;
   content: "";
-  background-image: url("../images/icons/triangle.svg");
+  background-image: url("../images/black-triangle.svg");
   width: 14px;
   height: 6px;
   top: -6px;
