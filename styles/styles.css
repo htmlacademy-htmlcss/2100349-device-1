@@ -599,6 +599,12 @@ html {
 .main-info {
   display: flex;
   background-image: linear-gradient(180deg,#ffe17f 125px,#fff 125px);
+  position: relative;
+}
+
+.slider {
+  display: block;
+  position: relative;
 }
 
 .slider-container {
@@ -717,20 +723,21 @@ html {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   display: block;
-  padding-top: 46px;
-  padding-left: 36px;
+
   position: relative;
+  border: none;
+  background-color: transparent;
 }
 
 .more-detailed-link::before {
-  content: " ";
+  background-image: url(../images/background-rectangle.svg);
+  background-position: left;
   position: absolute;
-  width: 166px;
-  height: 50%;
-  top: 20px;
-  left: 23px;
-  border-bottom: 7px solid #ffe17f;
+  width: 120px;
+  height: 8px;
+  content: " ";
   z-index: -1;
+  top: 14px;
 }
 
 .parameters {
@@ -952,13 +959,18 @@ html {
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
-  padding-left: 10px;
+  padding-left: 17px;
+  padding-top: 5px;
   margin-bottom: 35px;
   border: none;
   position: relative;
   background-color: transparent;
 }
 
+.button-delivery-credit {
+  padding-left: 30px;
+}
+/*
 .button-delivery::before {
   background-image: url(../images/background-rectangle.svg);
   background-position: left;
@@ -968,6 +980,17 @@ html {
   content: " ";
   z-index: -2;
   top: 14px;
+}*/
+
+.button-delivery::before {
+  content: " ";
+  position: absolute;
+  width: 160px;
+  height: 50%;
+  top: -3px;
+  left: 0;
+  border-bottom: 7px solid #ffe17f;
+  z-index: -1;
 }
 
 
