@@ -745,6 +745,10 @@ html {
   height: 72px;
 }
 
+.material {
+  padding-left: 25px;
+}
+
 .numeric-parameter {
   font-family: Rubik, sans-serif;
   font-size: 36px;
