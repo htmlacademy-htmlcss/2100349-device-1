@@ -69,9 +69,9 @@ html {
   display: flex;
   width: 1040px;
   height: 40px;
-  padding-left: 58px;
+  padding-left: 60px;
   padding-right: 60px;
-  padding-top: 28px;
+  padding-top: 26px;
 }
 
 .search-form {
@@ -211,7 +211,7 @@ html {
   width: 102px;
   height: 26px;
   padding-top: 5px;
-  margin-left: 50px;
+  margin-left: 38px;
   background-image: url(../images/icon-comparison-chart.svg);
   background-repeat: no-repeat;
   background-position: left bottom 30%;
@@ -834,7 +834,7 @@ html {
 /*Выбор категории товаров*/
 
 .cards-category {
-  margin-top: 70px;
+  margin-top: 0;
 }
 
 .category {
@@ -930,9 +930,9 @@ html {
 .menu-delivery {
   list-style-type: none;
   border-right: 7px solid #000000;
-  padding-top: 64px;
+  padding-top: 49px;
   width: 280px;
-  height: 310px;
+  height: 257px;
   padding-left: 0;
 }
 
@@ -1114,7 +1114,7 @@ html {
 
 /*Контакты*/
 .info {
-  margin-top: 55px;
+  margin-top: 58px;
   display: flex;
 }
 
@@ -1281,7 +1281,7 @@ html {
 /*Подписка*/
 .subscription {
   background-color: #f0f0f0;
-  margin-top: 70px;
+  margin-top: 59px;
   height: 421px;
 }
 
@@ -1422,7 +1422,7 @@ html {
 .device {
   width: 234px;
   height: 182px;
-  margin-top: 73px;
+  margin-top: 65px;
 }
 
 .logo-site-footer {
@@ -1437,15 +1437,16 @@ html {
   font-weight: 400;
   line-height: 20px;
   padding-top: 19px;
+  width: 240px;
 }
 
 .yellow-line {
-  padding-top: 27px;
+  padding-top: 46px;
 }
 
 .footer-link {
   padding-left: 124px;
-  padding-top: 137px;
+  padding-top: 128px;
 }
 
 .footer-menu-delivery {
@@ -1563,8 +1564,8 @@ html {
 .footer-contacts {
   width: 175px;
   height: 116px;
-  padding-top: 140px;
-  padding-left: 207px;
+  padding-top: 132px;
+  padding-left: 189px;
 }
 
 .footer-contacts-phone {
@@ -1957,6 +1958,8 @@ html {
   line-height: 50px;
   display: block;
   padding-left: 60px;
+  padding-top: 10px;
+  margin-bottom: 0;
 }
 
 .breadcrumbs {
@@ -2017,7 +2020,7 @@ html {
 .filter-wrapper {
   width: 260px;
   padding-left: 60px;
-  padding-top: 10px;
+  padding-top: 12px;
 
 }
 
@@ -2033,7 +2036,7 @@ html {
 }
 
 .filter-form {
-  padding-top: 35px;
+  padding-top: 26px;
 
 }
 
@@ -2293,13 +2296,13 @@ html {
   line-height: normal;
   letter-spacing: 3.2px;
   text-transform: uppercase;
-  padding-left: 20px;
-  padding-top: 10px;
+  padding-left: 42px;
+  padding-top: 16px;
 }
 
 .select-control {
   align-self: center;
-  margin-right: 206px;
+  margin-right: 61px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -2313,6 +2316,7 @@ html {
   background-position: center right;
   direction: rtl;
   transition: opacity .15s;
+  padding-top: 3px;
 }
 
 .select-control:disabled {
@@ -2348,8 +2352,8 @@ html {
   height: 30px;
   width: 60px;
   transition: opacity 0.15s;
-  padding-right: 40px;
-  padding-top: 18px;
+  padding-right: 47px;
+  padding-top: 22px;
 }
 
 .up-arrow:hover,
@@ -2509,8 +2513,8 @@ html {
   line-height: normal;
   display: flex;
   justify-content: end;
-  padding-top: 35px;
-  padding-left: 70px;
+  padding-top: 30px;
+  padding-left: 73px;
 }
 
 .download-more {
@@ -2525,7 +2529,7 @@ html {
   width: 760px;
   height: 55px;
   border: 3px solid #e5e5e5;
-  margin-top: 44px;
+
 }
 
 .download-more:hover {
