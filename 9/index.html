@@ -12,22 +12,25 @@
     <!-- Шапка сайта -->
     <header class="main-container main-header">
       <a href="#" class="logo-site">
-        <img class="logo" src="images/logo-site.svg" width="145" height="36" alt="Логотип сайта DEVICE.">
+        <img class="logo" src="images/logo-site.svg" width="145" height="36" alt="Логотип сайта Девайс.">
       </a>
       <div class="header-option">
+        <h1 class="visually-hidden">Поиск по сайту</h1>
         <form class="search-form">
           <input class="search-string" type="text" placeholder="Поиск по сайту">
           <button class="search-button" type="submit">Найти</button>
         </form>
-
-        <a href="#" class="account">Войти</a>
-
+        <ul class="account">
+          <li>
+            <a href="#" class="account-name">Войти</a>
+          </li>
+        </ul>
         <a href="#" class="compare">Сравнить</a>
 
         <a href="#" class="basket"><span class="number">2</span>Корзина</a>
         <div class="popover popover-cart">
           <div class="popover-content">
-            <h2 class="visually-hidden">Корзина</h2>
+            <span class="visually-hidden">Корзина</span>
             <ul class="cart-list">
               <li class="cart-item">
                 <a class="cart-item-link" href="#">
@@ -55,11 +58,12 @@
             <a class="cart-item-button" href="#">Открыть корзину</a>
           </div>
         </div>
-
       </div>
+
       <div class="header-catalog">
         <div class="navigation-catalog">
           <a class="header-catalog-link" href="catalog.html">Каталог товаров</a>
+          <span class="visually-hidden">Меню каталог товаров</span>
 
           <ul class="navigation-list catalog">
             <li class="navigation-item">
@@ -85,10 +89,13 @@
         <ul class="header-menu">
           <li class="header-menu-item">
             <a class="header-menu-link" href="#">Доставка</a>
+          </li>
           <li class="header-menu-item">
             <a class="header-menu-link" href="#">Гарантия</a>
+          </li>
           <li class="header-menu-item">
             <a class="header-menu-link" href="#">Контакты</a>
+          </li>
         </ul>
       </div>
     </header>
@@ -96,13 +103,13 @@
     <!--Слайдер-->
     <main class="main-container">
       <div class="slider">
-        <h1 class="visually-hidden" hidden>Блок слайдер с кнопками прокрутки</h1>
+        <h1 class="visually-hidden" hidden>Популярные товары</h1>
         <div class="main-info">
 
           <!--Слайдер 01-->
           <div class="slider-container copter-slider">
             <button class="slider-button slider-prev" type="button"></button>
-            <img class="slider-picture" src="images/slider-copter.png" width="560" height="560"
+            <img class="slider-picture" src="images/slider-copter.png" width="560" height="500"
               alt="фотография квадрокоптера.">
             <button class="slider-button slider-next" type="button"></button>
           </div>
@@ -154,7 +161,7 @@
 
             <div class="slider-container selfy-slider">
               <button class="slider-button slider-prev" type="button"></button>
-              <img class="slider-picture" src="images/selfy-slider-3.png" width="560" height="560"
+              <img class="slider-picture" src="images/selfy-slider-3.png" width="560" height="500"
                 alt="фотография квадрокоптера.">
               <button class="slider-button slider-next" type="button"></button>
             </div>
@@ -181,6 +188,7 @@
                 </dl>
               </div>
             </div>
+
         </div>
 
 
@@ -205,7 +213,7 @@
 
     <section class="cards-category">
       <div class="main-container">
-        <h2 class="visually-hidden" hidden>Карточки категорий товаров</h2>
+        <h2 class="visually-hidden" hidden>Категории товаров</h2>
         <div>
           <ul class="category">
             <li class="category-item">
@@ -236,6 +244,7 @@
     <section class="delivery">
       <div class="main-container">
         <div class="delivery-container">
+          <span class="visually-hidden">Меню сервисы</span>
           <ul class="menu-delivery">
             <li>
               <button class="button-delivery button-delivery-current" type="button">Доставка</button>
@@ -280,7 +289,9 @@
 
       <!--Контакты-->
       <div class="info">
+        <span class="visually-hidden">Контактная информация</span>
         <div class="about-us">
+          <img class="back-line" src="images/black-line.svg" width="84" height="7" alt="Декоративная черная полоса.">
           <h2 class="about-us-head-text">О нас</h2>
           <p class="about-us-text">Огромный выбор гаджетов не оставит равнодушным
             гика, который есть в каждом из нас.
@@ -296,6 +307,7 @@
           <a class="more-about-us" href="#">Подробнее о нас</a>
         </div>
         <div class="contacts">
+          <img class="back-line" src="images/black-line.svg" width="84" height="7" alt="Декоративная черная полоса.">
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис.
             Заодно сможете проверить работоспособность покупки.
@@ -339,8 +351,8 @@
           <a class="logo-site-footer" href="index.html">
             <img class="footer-logo" src="images/yellow-logo-site.svg" alt="логотип сайта.">
           </a>
-          <p class="device-text">Санкт-Петербург, набережная
-            реки Карповки, 5, литера П.</p>
+          <p class="device-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+          <img class="yellow-line" src="images/yellow-line-footer.svg" width="80" height="7" alt="Декоративная желтая полоса.">
         </div>
         <div class="footer-link">
           <ul class="footer-menu-delivery">
@@ -351,26 +363,27 @@
               <a class="footer-button-warranty" href="#">Гарантия</a>
             </li>
             <li>
-              <a class="footer-button-credit" href="#">Кредит</a>
+              <a class="footer-button-credit" href="#">Кредиты</a>
             </li>
           </ul>
           <div class="social-list">
+            <span class="visually-hidden">Ссылки на страницы в социальных сетях</span>
             <ul class="social-list-links">
               <li class="social-list-item">
-                <a href="https://telegram.org/">
-                  <img class="logo-telegramm" src="images/telegram-logo.svg" width="40" height="40"
+                <a href="https://t.me/htmlacademy">
+                  <img class="logo-telegramm" src="images/t-mini-icons.svg" width="14" height="14"
                     alt="логотип социальной сети телеграмм.">
                 </a>
               </li>
               <li class="social-list-item">
-                <a href="youtube.com">
-                  <img class="logo-youtube" src="images/youtube-logo.svg" width="40" height="40"
+                <a href="https://www.youtube.com/user/htmlacademyru">
+                  <img class="logo-youtube" src="images/yout-mini-icons.svg" width="16" height="18"
                     alt="логотип социальной сети ютуб.">
                 </a>
               </li>
               <li class="social-list-item">
-                <a href="http://x.com/">
-                  <img class="logo-x" src="images/twitter-logo.svg" width="40" height="40"
+                <a href="https://twitter.com/htmlacademy_ru">
+                  <img class="logo-x" src="images/tw-mini-icon.svg" width="16" height="20"
                     alt="логотип социальнойсети твиттер.">
                 </a>
               </li>
@@ -384,7 +397,6 @@
               alt="логотип сайта htmlacademy.">
           </a>
         </div>
-      </div>
       </div>
     </footer>
 
