@@ -723,14 +723,14 @@ html {
 }
 
 .more-detailed-link::before {
-  background-image: url(../images/background-rectangle.svg);
-  background-position: left;
-  position: absolute;
-  width: 140px;
-  height: 8px;
   content: " ";
+  position: absolute;
+  width: 166px;
+  height: 50%;
+  top: 20px;
+  left: 23px;
+  border-bottom: 7px solid #ffe17f;
   z-index: -1;
-  top: 55px;
 }
 
 .parameters {
@@ -2266,13 +2266,14 @@ html {
 }
 
 .show-button::before {
-  background-image: url(../images/background-rectangle.svg);
-  position: absolute;
-  width: 140px;
-  height: 8px;
   content: " ";
+  position: absolute;
+  width: 166px;
+  height: 50%;
+  top: -3px;
+  left: -5px;
+  border-bottom: 7px solid #ffe17f;
   z-index: -1;
-  top: 16px;
 }
 
 /*Меню Сортировка*/
