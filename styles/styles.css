@@ -1197,16 +1197,40 @@ html {
   text-decoration: none;
   color: #000;
   position: relative;
+  padding-left: 23px;
 }
 
 .more-about-us::before {
-  background-image: url(../images/background-rectangle.svg);
-  position: absolute;
-  width: 220px;
-  height: 8px;
   content: " ";
+  position: absolute;
+  width: 270px;
+  height: 50%;
+  top: -3px;
+  left: 0;
+  border-bottom: 7px solid #ffe17f;
   z-index: -1;
-  top: 7px;
+  padding-left: 20px;
+}
+
+.more-about-us:hover::before {
+  border-bottom: 40px solid #ffe17f;
+  top: -20px;
+}
+
+.more-about-us:active::before {
+  border-bottom: 40px solid #ffcc33;
+  top: -20px;
+}
+
+.more-about-us:focus {
+  outline: 2px solid #af4fff;
+  padding-right: 40px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+}
+
+.more-about-us:disabled {
+  opacity: 0.3;
 }
 
 .contacts-title {
@@ -1292,16 +1316,39 @@ html {
   letter-spacing: 3.6px;
   text-transform: uppercase;
   position: relative;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .write-to-us::before {
-  background-image: url(../images/background-rectangle.svg);
-  position: absolute;
-  width: 190px;
-  height: 8px;
   content: " ";
+  position: absolute;
+  width: 250px;
+  height: 6px;
+  top: 7px;
+  left: 0;
+  border-bottom: 7px solid #ffe17f;
   z-index: -1;
-  top: 6px;
+}
+
+.write-to-us:hover::before {
+  border-bottom: 40px solid #ffe17f;
+  top: -11px;
+}
+
+.write-to-us:active::before {
+  border-bottom: 40px solid #ffcc33;
+  top: -11px;
+}
+
+.write-to-us:focus {
+  outline: 2px solid #af4fff;
+  padding-right: 25px;
+}
+
+.write-to-us:disabled {
+  opacity: 0.3;
 }
 
 
