@@ -2054,20 +2054,20 @@ html {
   font-weight: 800;
   line-height: 50px;
   display: block;
-  padding-left: 60px;
+  padding-left: 62px;
   padding-top: 10px;
   margin-bottom: 0;
 }
 
 .breadcrumbs {
   list-style-type: none;
-  padding-left: 60px;
+  padding-left: 63px;
   display: flex;
   margin-bottom: 34px;
 }
 
 .breadcrumbs-item {
-  margin-right: 14px;
+  margin-right: 20px;
 }
 
 .breadcrumbs-link {
@@ -2116,8 +2116,8 @@ html {
 
 .filter-wrapper {
   width: 260px;
-  padding-left: 60px;
-  padding-top: 12px;
+  padding-left: 62px;
+  padding-top: 9px;
 
 }
 
@@ -2134,7 +2134,6 @@ html {
 
 .filter-form {
   padding-top: 26px;
-
 }
 
 .filter-title {
@@ -2356,10 +2355,12 @@ html {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
-  letter-spacing: 3.6px;
+  letter-spacing: 1.6px;
   text-transform: uppercase;
   border: none;
   position: relative;
+  padding-top: 7px;
+  padding-left: 50px;
 }
 
 .show-button::before {
@@ -2395,12 +2396,12 @@ html {
   letter-spacing: 3.2px;
   text-transform: uppercase;
   padding-left: 42px;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 .select-control {
   align-self: center;
-  margin-right: 61px;
+  margin-right: 55px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -2596,9 +2597,9 @@ html {
   letter-spacing: -0.36px;
   color: #000;
   display: flex;
-  padding-top: 32px;
+  padding-top: 30px;
   width: 226px;
-  height: 40px;
+  height: 41px;
 }
 
 .sale-name-card {
@@ -2611,8 +2612,8 @@ html {
   line-height: normal;
   display: flex;
   justify-content: end;
-  padding-top: 30px;
-  padding-left: 73px;
+  padding-top: 28px;
+  padding-left: 74px;
 }
 
 .download-more {
@@ -2627,7 +2628,7 @@ html {
   width: 760px;
   height: 55px;
   border: 3px solid #e5e5e5;
-
+  padding-left: 15px;
 }
 
 .download-more:hover {
@@ -2659,7 +2660,7 @@ html {
 
 .page-numbers-list {
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 4px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -2721,6 +2722,7 @@ html {
   padding: 25px;
   text-decoration: none;
   color: #000;
+  padding-right: 20px;
 }
 
 .back:hover,
