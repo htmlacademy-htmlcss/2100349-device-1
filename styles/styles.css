@@ -572,9 +572,11 @@ html {
 .header-menu {
   display: flex;
   list-style-type: none;
-  margin-left: 192px;
-  margin-right: 60px;
+  margin-left: 193px;
+  margin-right: 55px;
   margin-top: 44px;
+  min-height: 21px;
+  flex-wrap: wrap;
 }
 
 .header-menu-link {
@@ -1554,6 +1556,8 @@ html {
   list-style-type: none;
   display: flex;
   padding-left: 0;
+  flex-wrap: wrap;
+  min-height: 21px;
 }
 
 .footer-button-delivery {
@@ -2367,6 +2371,7 @@ html {
   position: relative;
   padding-top: 7px;
   padding-left: 50px;
+  background: transparent;
 }
 
 .show-button::before {
