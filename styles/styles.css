@@ -970,17 +970,6 @@ html {
 .button-delivery-credit {
   padding-left: 30px;
 }
-/*
-.button-delivery::before {
-  background-image: url(../images/background-rectangle.svg);
-  background-position: left;
-  position: absolute;
-  width: 120px;
-  height: 8px;
-  content: " ";
-  z-index: -2;
-  top: 14px;
-}*/
 
 .button-delivery::before {
   content: " ";
@@ -1000,6 +989,18 @@ html {
   color: #ffe17f;
   background-color: #000;
   text-align: start;
+}
+
+.button-delivery-current:hover,
+.button-delivery-current:active {
+  padding-left: 40px;
+}
+
+
+.button-delivery-current:focus {
+  padding-left: 40px;
+  outline: 2px solid #af4fff;
+  outline-offset: 2px;
 }
 
 
