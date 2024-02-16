@@ -16,7 +16,7 @@
       <div class="header-option">
         <span class="visually-hidden">Поиск по сайту</span>
         <form class="search-form" action="https://echo.htmlacademy.ru">
-          <input class="search-string-catalog" type="text" placeholder="Текст поиска">
+          <input class="search-string-catalog" type="text" placeholder="Текст поиска" required>
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="account">
@@ -104,8 +104,8 @@
 
     <!--Заголовок категории товаров-->
     <section class="main-container">
-      <h1 class="visually-hidden" hidden>Страница с каталогом моноподов для селфи</h1>
-      <h2 class="category-title">Моноподы для селфи</h2>
+      <span class="visually-hidden" hidden>Страница с каталогом моноподов для селфи</span>
+      <h1 class="category-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -225,7 +225,9 @@
             </select>
             <div class="sorter-button">
               <a href="#" class="up-arrow"></a>
+              <span class="visually-hidden">кнопка сортировки вверх</span>
               <a href="#" class="down-arrow"></a>
+              <span class="visually-hidden">кнопка сортировки вниз</span>
             </div>
 
           </div>
@@ -310,7 +312,7 @@
       <div class="footer-content main-container">
         <div class="device">
           <a class="logo-site-footer" href="index.html">
-            <img class="footer-logo" src="images/yellow-logo-site.svg" alt="логотип сайта." >
+            <img class="footer-logo" src="images/yellow-logo-site.svg" width="145" height="36" alt="логотип сайта." >
           </a>
           <p class="device-text">Санкт-Петербург, набережная
             реки Карповки, 5, литера П.</p>
