@@ -1536,6 +1536,7 @@ html {
   justify-content: center;
   align-items: center;
   border: 3px solid #c4c4c4;
+  background: inherit;
 }
 
 .subscription-button:hover {
