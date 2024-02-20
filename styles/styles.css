@@ -664,7 +664,7 @@ html {
 }
 
 .slider-picture {
-  padding-top: 5px;
+  margin-top: -35px;
 }
 
 .slider-prev {
@@ -752,17 +752,17 @@ html {
   position: relative;
   border: none;
   background-color: transparent;
-  padding-top: 43px;
-  padding-left: 40px;
+  z-index: 0;
+  margin-top: 61px;
+  padding-left: 38px;
 }
 
 .more-detailed-link::before {
   content: " ";
   position: absolute;
-  width: 250px;
-  height: 6px;
-  top: 7px;
-  left: 0;
+  width: 220px;
+  height: 8px;
+  left: -1px;
   border-bottom: 7px solid #ffe17f;
   z-index: -1;
 }
@@ -821,10 +821,11 @@ html {
 
 .slider-pagination {
   display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
-  margin: -46px;
-  padding-left: 590px;
+  margin: 34px;
+  bottom: 0;
+  left: 46%;
+  transform: translateX(-50%);
   z-index: 2;
   position: absolute;
 }
@@ -1528,7 +1529,7 @@ html {
   line-height: 21px;
   text-align: center;
   width: 253px;
-  height: 60px;
+  min-height: 60px;
   font-style: normal;
   letter-spacing: 1.6px;
   text-transform: uppercase;
@@ -2442,9 +2443,10 @@ html {
   text-transform: uppercase;
   border: none;
   position: relative;
-  padding-top: 7px;
-  padding-left: 50px;
+  margin-top: 35px;
+  padding-left: 25px;
   background: transparent;
+  z-index: 0;
 }
 
 .show-button::before {
