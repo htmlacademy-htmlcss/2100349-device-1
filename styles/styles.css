@@ -45,8 +45,10 @@ html {
 
 .logo-site {
   display: block;
-  padding-top: 7px;
-  padding-left: 61px;
+  margin-top: 7px;
+  margin-left: 61px;
+  width: 145px;
+  height: 36px;
 }
 
 .logo {
@@ -65,7 +67,9 @@ html {
 }
 
 .logo:focus,
-.footer-logo:focus {
+.footer-logo:focus,
+.logo-site:focus,
+.logo-site-footer:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
@@ -565,18 +569,21 @@ html {
 
 .navigation-link:hover {
   opacity: 0.6;
-  text-decoration: underline;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 4px;
 }
 
 .navigation-link:active {
   opacity: 0.3;
-  text-decoration: underline;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 4px;
 }
 
 .navigation-link:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
-  text-decoration: underline;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 4px;
 }
 
 .header-menu {
@@ -596,25 +603,28 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  padding-left: 45px;
+  margin-left: 45px;
   text-decoration: none;
   color: #000000;
 }
 
 .header-menu-link:hover {
-  text-decoration: underline;
+  border-bottom: 3px solid #000000;
+  padding-bottom: 4px;
   opacity: 0.6;
 }
 
 .header-menu-link:active {
-  text-decoration: underline;
+  border-bottom: 3px solid #000000;
+  padding-bottom: 4px;
   opacity: 0.3;
 }
 
 .header-menu-link:focus {
   outline: 2px solid #af4fff;
   outline-offset: 2px;
-  text-decoration: underline;
+  border-bottom: 3px solid #000000;
+  padding-bottom: 4px;
 }
 
 
@@ -1582,6 +1592,7 @@ html {
 
 .logo-site-footer {
   display: block;
+  width: 145px;
 }
 
 .device-text {
@@ -1633,7 +1644,7 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  padding-left: 35px;
+  margin-left: 35px;
   text-decoration: none;
 }
 
@@ -1646,7 +1657,7 @@ html {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  padding-left: 35px;
+  margin-left: 35px;
   text-decoration: none;
 }
 
@@ -1654,14 +1665,16 @@ html {
 .footer-button-warranty:hover,
 .footer-button-contacts:hover {
   color: #ffcc33;
-  text-decoration: underline;
+  border-bottom: 3px solid #ffcc33;
+  padding-bottom: 4px;
 }
 
 .footer-button-delivery:active,
 .footer-button-warranty:active,
 .footer-button-contacts:active {
   opacity: 0.3;
-  text-decoration: underline;
+  border-bottom: 3px solid #ffcc33;
+  padding-bottom: 4px;
 }
 
 .footer-button-delivery:focus,
@@ -2443,8 +2456,8 @@ html {
   text-transform: uppercase;
   border: none;
   position: relative;
-  margin-top: 35px;
-  padding-left: 25px;
+  margin-top: 45px;
+  padding-left: 45px;
   background: transparent;
   z-index: 0;
 }
@@ -2452,25 +2465,29 @@ html {
 .show-button::before {
   content: " ";
   position: absolute;
-  width: 166px;
+  width: 217px;
   height: 50%;
   top: -3px;
-  left: -5px;
-  border-bottom: 7px solid #ffe17f;
+  left: -2px;
+  border-bottom: 8px solid #ffe17f;
   z-index: -1;
 }
 
 .show-button:hover::before {
   border-bottom: 40px solid #ffe17f;
+  top: -20px;
 }
 
 .show-button:active::before {
   border-bottom: 40px solid #ffcc33;
+  top: -20px;
 }
 
 .show-button:focus {
   outline: 2px solid #af4fff;
-  padding-right: 5px;
+  padding-right: 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .show-buttondisabled {
@@ -2632,16 +2649,34 @@ html {
   text-align: center;
   color: #000000;
   z-index: 1;
+  text-transform: uppercase;
 }
 
 .button-more-detailed::before {
-  background-image: url("../images/background-rectangle.svg");
-  position: absolute;
-  width: 140px;
-  height: 8px;
   content: " ";
+  position: absolute;
+  width: 220px;
+  height: 50%;
+  top: -5px;
+  left: -5px;
+  border-bottom: 8px solid #ffe17f;
   z-index: -1;
-  top: 7px;
+}
+
+.button-more-detailed:hover::before {
+  border-bottom: 40px solid #ffe17f;
+  top: -20px;
+}
+
+.button-more-detailed:active::before {
+  border-bottom: 40px solid #ffcc33;
+  top: -20px;
+}
+
+.button-more-detailed:focus::before {
+  outline: 2px solid #af4fff;
+  top: -15px;
+  background-color: #ffcc33;
 }
 
 .card-link {
