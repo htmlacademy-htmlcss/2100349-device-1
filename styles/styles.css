@@ -763,8 +763,9 @@ html {
   border: none;
   background-color: transparent;
   z-index: 0;
-  margin-top: 61px;
+  margin-top: 51px;
   padding-left: 38px;
+  min-height: 40px;
 }
 
 .more-detailed-link::before {
@@ -779,10 +780,13 @@ html {
 
 .more-detailed-link:hover::before {
   border-bottom: 40px solid #ffe17f;
+  top: -9px;
 }
 
 .more-detailed-link:active::before {
-  border-bottom: 40px solid #ffcc33;
+  background-color: #ffcc33;
+  height: 40px;
+  padding-right: 40px;
 }
 
 .more-detailed-link:focus {
@@ -1279,7 +1283,7 @@ html {
   height: 50%;
   top: -3px;
   left: 0;
-  border-bottom: 6px solid #ffe17f;
+  border-bottom: 8px solid #ffe17f;
   z-index: -1;
   padding-left: 22px;
 }
@@ -1296,9 +1300,9 @@ html {
 
 .more-about-us:focus {
   outline: 2px solid #af4fff;
-  padding-right: 40px;
+  padding-right: 22px;
   padding-top: 9px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 }
 
 .more-about-us:disabled {
@@ -1390,10 +1394,11 @@ html {
   text-transform: uppercase;
   position: relative;
   padding-left: 33px;
-  padding-top: 5px;
+  padding-top: 8px;
   padding-bottom: 8px;
   text-decoration: none;
   color: #000000;
+  min-height: 40px;
 }
 
 .write-to-us::before {
@@ -1401,25 +1406,25 @@ html {
   position: absolute;
   width: 250px;
   height: 6px;
-  top: 7px;
+  top: 9px;
   left: 0;
-  border-bottom: 7px solid #ffe17f;
+  border-bottom: 8px solid #ffe17f;
   z-index: -1;
 }
 
 .write-to-us:hover::before {
   border-bottom: 40px solid #ffe17f;
-  top: -11px;
+  top: -8px;
 }
 
 .write-to-us:active::before {
-  border-bottom: 40px solid #ffcc33;
-  top: -11px;
+  border-bottom: 39px solid #ffcc33;
+  top: -8px;
 }
 
 .write-to-us:focus {
   outline: 2px solid #af4fff;
-  padding-right: 25px;
+  padding-right: 23px;
 }
 
 .write-to-us:disabled {
@@ -2087,6 +2092,7 @@ html {
 
 .modal-button {
   width: 200px;
+  height: 40px;
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -2106,13 +2112,40 @@ html {
 }
 
 .modal-button::before {
-  background-image: url("../images/background-rectangle.svg");
-  position: absolute;
-  width: 140px;
-  height: 8px;
   content: " ";
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  left: -1px;
+  border-bottom: 8px solid #ffe17f;
   z-index: -1;
-  top: 16px;
+  top: -23px;
+}
+
+.modal-button:hover::before {
+  background-color: #ffe17f;
+  top: -5px;
+}
+
+.modal-button:active::before {
+  background-color: #ffcc33;
+  top: -1px;
+  border-bottom: none;
+}
+
+.modal-button:focus::before {
+  outline: 2px solid #af4fff;
+  padding-right: 5px;
+  background-image: url("../images/background-rectangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  top: 2px;
+  border-bottom: none;
+}
+
+.modal-button:disabled::before {
+  opacity: 0.3;
 }
 
 
