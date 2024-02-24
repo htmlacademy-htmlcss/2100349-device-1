@@ -514,7 +514,7 @@ html {
   list-style-type: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 15px 45px;
+  gap: 2px 8px;
   margin-left: -60px;
   padding-left: 60px;
   position: relative;
@@ -776,10 +776,11 @@ html {
   left: -1px;
   border-bottom: 7px solid #ffe17f;
   z-index: -1;
+  top: 7px;
 }
 
 .more-detailed-link:hover::before {
-  border-bottom: 40px solid #ffe17f;
+  border-bottom: 42px solid #ffe17f;
   top: -9px;
 }
 
@@ -2525,7 +2526,7 @@ html {
 
 .show-button:focus {
   outline: 2px solid #af4fff;
-  padding-right: 52px;
+  padding-right: 41px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -2715,7 +2716,10 @@ html {
 
 .button-more-detailed:focus::before {
   outline: 2px solid #af4fff;
-  top: -15px;
+  top: -10px;
+  padding-bottom: 16px;
+  padding-top: 12px;
+  border-bottom: none;
   background-color: #ffcc33;
 }
 
