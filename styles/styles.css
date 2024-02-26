@@ -38,7 +38,7 @@ html {
 /* index.html */
 /*Шапка сайта*/
 .main-header {
-  height: 210px;
+  min-height: 210px;
   padding-top: 15px;
   background-image: linear-gradient(180deg, #ffffff 40px, #ffe17f 40px);
 }
@@ -724,6 +724,7 @@ html {
 .slide-description {
   margin-left: 40px;
   position: relative;
+  padding-bottom: 85px;
 }
 
 .slider-text-head {
@@ -836,16 +837,18 @@ html {
 .slider-pagination {
   display: flex;
   list-style-type: none;
-  margin: 34px;
-  bottom: 0;
-  left: 46%;
+  margin: 0;
+  bottom: 35px;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 2;
   position: absolute;
+  padding-left: 0;
 }
 
 .slider-pagination-item {
-  line-height: 0;
+  display: flex;
+  column-gap: 20px;
 }
 
 .slider-pagination-item:not(:last-child) {
@@ -859,10 +862,8 @@ html {
   padding: 0;
   border: 2px solid #000000;
   border-radius: 50%;
-  background-color: #ffffff;
   transition: opacity 0.05s;
   cursor: pointer;
-  margin-right: 15px;
 }
 
 .buttons-indicators-current {
