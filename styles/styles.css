@@ -1474,13 +1474,13 @@ html {
   width: 555px;
   min-height: 90px;
   margin-left: auto;
-  padding-top: 34px;
+  padding-top: 32px;
 }
 
 .subscribe-form {
   width: 1159px;
   min-height: 57px;
-  margin-top: 83px;
+  margin-top: 96px;
 }
 
 .free {
@@ -1502,6 +1502,7 @@ html {
 
 .subscription-form {
   min-height: 57px;
+  margin-left: -1px;
 }
 
 .subscription-string {
@@ -1511,8 +1512,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  width: 557px;
-  height: 60px;
+  width: 556px;
+  min-height: 61px;
   background-color: #f0f0f0;
   border-bottom: 3px solid #c4c4c4;
   border-left: none;
@@ -1539,7 +1540,7 @@ html {
   opacity: 0.3;
 }
 
-.subscription-string:invalid {
+.subscription-string:not(:placeholder-shown):invalid {
   border-bottom: 3px solid #ff3d3d;
 }
 
@@ -1933,7 +1934,7 @@ html {
   z-index: 1;
 }
 
-.rare-item-order-field:invalid {
+.rare-item-order-field:not(:placeholder-shown):invalid {
   outline: 2px solid #ff3d3d;
   outline-offset: -2px;
 }
