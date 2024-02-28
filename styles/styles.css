@@ -38,7 +38,7 @@ html {
 /* index.html */
 /*Шапка сайта*/
 .main-header {
-  height: 210px;
+  min-height: 210px;
   padding-top: 15px;
   background-image: linear-gradient(180deg, #ffffff 40px, #ffe17f 40px);
 }
@@ -724,6 +724,7 @@ html {
 .slide-description {
   margin-left: 40px;
   position: relative;
+  padding-bottom: 85px;
 }
 
 .slider-text-head {
@@ -836,16 +837,18 @@ html {
 .slider-pagination {
   display: flex;
   list-style-type: none;
-  margin: 34px;
-  bottom: 0;
-  left: 46%;
+  margin: 0;
+  bottom: 35px;
+  left: 50%;
   transform: translateX(-50%);
   z-index: 2;
   position: absolute;
+  padding-left: 0;
 }
 
 .slider-pagination-item {
-  line-height: 0;
+  display: flex;
+  column-gap: 20px;
 }
 
 .slider-pagination-item:not(:last-child) {
@@ -859,10 +862,8 @@ html {
   padding: 0;
   border: 2px solid #000000;
   border-radius: 50%;
-  background-color: #ffffff;
   transition: opacity 0.05s;
   cursor: pointer;
-  margin-right: 15px;
 }
 
 .buttons-indicators-current {
@@ -1473,13 +1474,13 @@ html {
   width: 555px;
   min-height: 90px;
   margin-left: auto;
-  padding-top: 34px;
+  padding-top: 32px;
 }
 
 .subscribe-form {
   width: 1159px;
   min-height: 57px;
-  padding-top: 60px;
+  margin-top: 96px;
 }
 
 .free {
@@ -1490,18 +1491,18 @@ html {
   font-weight: 400;
   line-height: 30px;
   width: 560px;
-  height: 85px;
+  min-height: 30px;
   display: flex;
   justify-content: end;
   margin-left: 44px;
-  padding-top: 34px;
   background-image: url("../images/green-check-mark.svg");
   background-repeat: no-repeat;
   background-position: center bottom 62%;
 }
 
 .subscription-form {
-  padding-top: 40px;
+  min-height: 57px;
+  margin-left: -1px;
 }
 
 .subscription-string {
@@ -1511,8 +1512,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  width: 557px;
-  height: 55px;
+  width: 556px;
+  min-height: 61px;
   background-color: #f0f0f0;
   border-bottom: 3px solid #c4c4c4;
   border-left: none;
@@ -1530,11 +1531,6 @@ html {
   background-color: #dcdcdc;
 }
 
-/*
-.subscription-string:invalid {
-  border-bottom: 3px solid #ff3d3d;
-}*/
-
 .subscription-string:active {
   border-bottom: 3px solid #c4c4c4;
 }
@@ -1544,6 +1540,10 @@ html {
   opacity: 0.3;
 }
 
+.subscription-string:not(:placeholder-shown):invalid {
+  border-bottom: 3px solid #ff3d3d;
+}
+
 .subscription-button {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -1551,29 +1551,32 @@ html {
   line-height: 21px;
   text-align: center;
   width: 253px;
-  height: 60px;
+  min-height: 57px;
   font-style: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  padding: 14px 24px;
   justify-content: center;
   align-items: center;
   border: 3px solid #c4c4c4;
   background: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-inline: 0;
+  padding-block: 0;
+  word-break: break-all;
 }
 
 .subscription-button:hover {
   background-color: #000000;
   color: #ffffff;
   border: none;
-  padding: 18px 39px;
 }
 
 .subscription-button:active {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
   border: none;
-  padding: 18px 39px;
 }
 
 .subscription-button:focus {
@@ -1932,7 +1935,7 @@ html {
   z-index: 1;
 }
 
-.input:invalid {
+.rare-item-order-field:not(:placeholder-shown):invalid {
   outline: 2px solid #ff3d3d;
   outline-offset: -2px;
 }
@@ -2129,7 +2132,7 @@ html {
   left: -1px;
   border-bottom: 8px solid #ffe17f;
   z-index: -1;
-  top: -23px;
+  top: -25px;
 }
 
 .modal-button:hover::before {
@@ -2150,7 +2153,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  top: 2px;
+  top: 0;
   border-bottom: none;
 }
 
@@ -2326,7 +2329,7 @@ html {
 .toggle-max {
   position: absolute;
   top: -9px;
-  right: 9px;
+  right: 12px;
 }
 
 .range-toggle {
@@ -2380,7 +2383,15 @@ html {
 }
 
 .label-min {
-  margin-left: 3px;
+  margin-left: 12px;
+}
+
+.prefix {
+  width: 20px;
+}
+
+.range-input {
+  width: 47px;
 }
 
 .range-input,
@@ -2390,7 +2401,6 @@ html {
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  width: 34px;
   appearance: textfield;
   border: none;
   background-color: transparent;
@@ -2797,6 +2807,10 @@ html {
   justify-content: end;
   padding-top: 28px;
   padding-left: 73px;
+}
+
+.first-product {
+  padding-left: 83px;
 }
 
 .download-more {
