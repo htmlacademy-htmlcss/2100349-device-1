@@ -1562,20 +1562,21 @@ html {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
+  padding-inline: 0;
+  padding-block: 0;
+  word-break: break-all;
 }
 
 .subscription-button:hover {
   background-color: #000000;
   color: #ffffff;
   border: none;
-  padding: 18px 39px;
 }
 
 .subscription-button:active {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
   border: none;
-  padding: 18px 39px;
 }
 
 .subscription-button:focus {
